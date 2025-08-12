@@ -17,7 +17,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 8);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -51,8 +51,8 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 w-full z-[9999999999999999999] transition-all duration-300",
           isScrolled
-            ? "bg-white shadow-md py-0"
-            : "bg-white py-3 "
+            ? "bg-white shadow-md py-1"
+            : " py-4 "
         )}
       >
         <div className="container flex items-center justify-between flex-wrap">

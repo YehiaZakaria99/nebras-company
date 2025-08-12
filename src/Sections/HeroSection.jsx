@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import img1 from "/HomePage/HeroSection/1.jpg";
 import img2 from "/HomePage/HeroSection/2.jpg";
-import img3 from "/HomePage/HeroSection/2.webp";
+import img3 from "/HomePage/HeroSection/3.jpg";
 // import img4 from "/HomePage/HeroSection/4.webp";
 
 import { cn } from "../lib/utils";
@@ -45,14 +45,14 @@ export default function HeroSection() {
   return (
     <section
       id="heroSection"
-      className="relative h-screen w-full overflow-hidden bg-primary"
+      className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-white via-hover/40 to-primary/40"
     >
       <IntroOverlay />
 
       <Slider {...settings}>
         {slides.map((src, index) => (
           <div key={index}>
-            <div className="relative h-screen bg-cover bg-center bg-fixed py-5 " style={{backgroundImage: `url(${src})`}}>
+            <div className="relative h-screen bg-cover bg-center py-5 " style={{backgroundImage: `url(${src})`}}>
               {/* <img
                 // loading="lazy"
                 src={src}
@@ -61,7 +61,7 @@ export default function HeroSection() {
               /> */}
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-hover/30 to-primary/50 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-b from-white via-hover/40 to-primary/40 z-10" />
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 ">
