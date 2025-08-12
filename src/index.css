@@ -46,6 +46,9 @@
   html {
     @apply scroll-smooth;
   }
+  body{
+    height: 1000px;
+  }
 }
 
 @utility container {
