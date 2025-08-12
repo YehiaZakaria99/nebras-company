@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router";
 import { ChevronDown, ChevronUp, ChevronUpIcon, Menu, X } from "lucide-react";
-import logo from "/Navbar/logo.svg";
+import logo from "/Navbar/logo.webp";
 import { cn } from "../../lib/utils";
 import NavbarMobile from "./NavbarMobile";
 import AboutDropdown from "./AboutDropdown";
@@ -28,16 +28,16 @@ export default function Navbar() {
     {
       name: "About",
       to: "about",
-      aboutList: [
-        { name: "Leadership", to: "/about/leadership" },
-        { name: "Our Equipments", to: "/about/our-equipments" },
-        { name: "Introduction", to: "/about/introduction" },
-        { name: "Information", to: "/about/information" },
-        { name: "Organizational Chart", to: "/about/organizational-chart" },
-        { name: "Our Man Power", to: "/about/our-man-power" },
-        { name: "Owned Machines", to: "/about/owned-machines" },
-        { name: "Financial Status", to: "/about/financial-status" },
-      ],
+      // aboutList: [
+      //   { name: "Leadership", to: "/about/leadership" },
+      //   { name: "Our Equipments", to: "/about/our-equipments" },
+      //   { name: "Introduction", to: "/about/introduction" },
+      //   { name: "Information", to: "/about/information" },
+      //   { name: "Organizational Chart", to: "/about/organizational-chart" },
+      //   { name: "Our Man Power", to: "/about/our-man-power" },
+      //   { name: "Owned Machines", to: "/about/owned-machines" },
+      //   { name: "Financial Status", to: "/about/financial-status" },
+      // ],
     },
     { name: "Our Solutions", to: "ourSolutions" },
     // { name: "Our Experience", to: "ourExperience" },
@@ -51,14 +51,14 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 w-full z-[9999999999999999999] transition-all duration-300",
           isScrolled
-            ? "bg-navbar backdrop-blur-md shadow-md py-3"
-            : "bg-navbar py-5 shadow-xl"
+            ? "bg-white shadow-md py-0"
+            : "bg-white py-3 "
         )}
       >
         <div className="container flex items-center justify-between flex-wrap">
           {/* Logo */}
           <NavLink to="" className="flex items-center z-50 ">
-            <img src={logo} alt="Logo" className="md:h-10 h-6 w-auto" />
+            <img src={logo} alt="Logo" className="w-20  " />
           </NavLink>
 
           {/* Desktop */}
@@ -80,7 +80,7 @@ export default function Navbar() {
                   <NavLink
                     aria-label={item.name}
                     to={item.to}
-                    className="text-primary font-bold hover:text-hover transition-colors duration-300 flex items-center"
+                    className="text-primary font-bold hover:text-secColor transition-colors duration-300 flex items-center"
                   >
                     {item.name}
                   </NavLink>

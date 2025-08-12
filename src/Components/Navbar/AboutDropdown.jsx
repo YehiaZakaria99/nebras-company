@@ -38,7 +38,7 @@ export default function AboutDropdown({
           className={cn(
             "text-primary font-bold my-2 lg:my-0",
             "inline-flex items-center",
-            "hover:text-hover transition-colors duration-300"
+            "hover:text-secColor transition-colors duration-300"
           )}
         >
           {item.name}
@@ -56,7 +56,7 @@ export default function AboutDropdown({
               isMobile
                 ? ""
                 : "absolute top-10 -left-1/2 bg-white z-50 min-w-[200px] ",
-              "transition-all duration-300 shadow-2xl rounded-lg py-2",
+              " shadow-2xl rounded-lg py-2",
               state
                 ? "max-h-[500px] opacity-100 pointer-events-auto"
                 : "max-h-0 opacity-0 py-0 pointer-events-none",

@@ -12,7 +12,7 @@ export default function Layout() {
     <div className="relative">
       <Navbar />
       <Outlet />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </div>
     </>
   );

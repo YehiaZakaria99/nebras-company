@@ -40,16 +40,17 @@ export default function HomePage() {
     <>
       <div className={cn("relative", "", "")}>
         <HeroSection />
-        <LeadershipSection />
+        {/* <LeadershipSection /> */}
+        {/* 
         <AboutSection />
         <WhyChooseUs />
         <OurSolutionsSection />
 
         <GalleryContextProvider>
           <GallerySection />
-        </GalleryContextProvider>
+        </GalleryContextProvider> */}
 
-        <ContactSection />
+        {/* <ContactSection /> */}
         {/* <Loading /> */}
         {isScrolled && <ScrollUp to="heroSection" />}
       </div>
