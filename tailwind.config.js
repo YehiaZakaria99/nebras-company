@@ -9,10 +9,13 @@ export default {
       },
       colors: {
         primary: "#292C62",
-        hover: "#55E9FC",
-        active: "#55E9FC",
+        hover: "#75ba75",
+        active: "#75ba75",
         navbar: "#F8F9FA",
         hero: "#F0F1F5",
+        secColor: "#fec76f",
+        test: "#71a3c1",
+
       },
       screens: {
         xs: "360px",
