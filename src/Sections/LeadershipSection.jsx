@@ -1,11 +1,14 @@
 import { cn } from "../lib/utils";
-import img02 from "/GalleryPage/02.webp";
-import VideoPlayer from "./../Components/LeaderShipComponent/VideoPlayer";
 import { NavLink } from "react-router";
-import chairmanImg from "/AboutPages/LeadershipPage/owner.webp";
+import chairmanImg from "/HomePage/LeadershipSection/chairman.webp";
+import bgImg from "/HomePage/LeadershipSection/bgImg.webp";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import chairmanMessage from "../Data/chairmanMessage";
+
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +21,7 @@ export default function LeadershipSection() {
   const quoteRef = useRef(null);
   const buttonRef = useRef(null);
   const overlayVideoRef = useRef(null);
-  const videoRef = useRef(null);
+  // const videoRef = useRef(null);
   const textSectionRef = useRef(null);
 
   // New: Refs for list items and leader cards
@@ -132,123 +135,73 @@ export default function LeadershipSection() {
   return (
     <section
       id="leadershipSection"
-      className="py-20 bg-white relative overflow-hidden"
+      className={cn("py-20 bg-white relative overflow-hidden bg-cover bg-center h-screen md:bg-fixed")}
+      style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
-        {/* Left Side */}
-        <div className="w-full lg:w-1/2 space-y-4">
-          <div className="group relative rounded-xl overflow-hidden shadow-lg">
-            <img
-              ref={imageRef}
-              loading="lazy"
-              src={img02}
-              alt="team"
-              className="w-full object-center object-cover h-[250px]"
-            />
-            <div
-              ref={overlayImageRef}
-              className="absolute inset-0 bg-white z-10"
-            />
-          </div>
-
-          <p
-            ref={textRef}
-            className="text-4xl font-bold text-primary flex items-baseline gap-2"
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-primary/70 z-10" />
+      {/* Heading */}
+      {/* <div className="mb-12">
+        <h3
+          ref={headingRef}
+          className="text-3xl text-center md:text-4xl font-extrabold text-primary tracking-wide mb-2"
+        >
+          Leadership to Inspire & Encourage
+        </h3>
+      </div> */}
+      <div className="container mx-auto px-4 flex flex-col justify-center items-center gap-10 z-50 relative">
+        {/* Image */}
+        <div className="w-1/2 space-y-4 ">
+          <div
+            className={cn(
+              "relative  rounded-xl overflow-hidden ",
+              "flex justify-center",
+              "py-3"
+            )}
           >
-            22+
-            <span className="text-gray-800 text-xl">Years Experience</span>
-          </p>
+            <div className="img-box w-60 h-60 overflow-hidden rounded-xl shadow-md shadow-hover group relative ">
+              <img
+                ref={imageRef}
+                loading="lazy"
+                src={chairmanImg}
+                alt="team"
+                className={cn(
+                  "w-full h-full object-cover object-top",
+                  "group-hover:scale-125 duration-300"
+                )}
+              />
+              <div
+                ref={overlayImageRef}
+                className="absolute inset-0 bg-white z-10"
+              />
+            </div>
+          </div>
+          <div className="text-center">
+            <p className="font-semibold text-lg text-white">{chairmanMessage.title}</p>
+            <p className="text-xs text-gray-300">{chairmanMessage.position}</p>
+          </div>
         </div>
 
         {/* Right Side */}
         <div ref={textSectionRef} className="w-full lg:w-1/2">
-          <div className="space-y-4">
-            {/* Heading */}
-            <div className="mb-12">
-              <h3
-                ref={headingRef}
-                className="text-3xl md:text-4xl font-extrabold text-primary tracking-wide mb-2"
-              >
-                Leadership to Inspire & Encourage
-              </h3>
-            </div>
-
+          <div className="space-y-4 text-center">
             {/* Quote */}
-            <p ref={quoteRef} className="italic text-primary/80">
-              “The key to the Group’s sustainable success is encouraging
-              leadership at all levels...
+            <p ref={quoteRef} className="italic text-white font-bold">
+              “{chairmanMessage.shortMsg}
             </p>
 
-            <div className="flex flex-col lg:flex-row gap-6">
-              {/* Highlights + Button */}
-              <div className="w-full lg:w-1/2 space-y-4">
-                <ul className="space-y-2 text-gray-700">
-                  {[
-                    "Multi-Speciality Company",
-                    "22+ Years of Progress",
-                    "Worldwide Presence",
-                    "Continuously Innovate",
-                  ].map((text, i) => (
-                    <li
-                      key={i}
-                      ref={(el) => (listRefs.current[i] = el)}
-                      className="flex items-center gap-2"
-                    >
-                      <span className="text-primary">➤</span> {text}
-                    </li>
-                  ))}
-                </ul>
-
-                <div ref={buttonRef}>
-                  <NavLink
-                    to="about/leadership"
-                    className={cn(
-                      "inline-block font-semibold mt-4 px-6 py-2 rounded-lg",
-                      "special-style border"
-                    )}
-                  >
-                    Read Chairman’s Message
-                  </NavLink>
-                </div>
-
-                <div className="space-y-6">
-                  {[
-                    {
-                      name: "Mohammed Shamrookh Al Assmi",
-                      title: "Chairman of Company",
-                    },
-                    {
-                      name: "Mutaeb AlHajri",
-                      title: "Executive Director",
-                    },
-                  ].map((leader, i) => (
-                    <div
-                      key={i}
-                      ref={(el) => (leaderRefs.current[i] = el)}
-                      className="flex items-center gap-4"
-                    >
-                      <img
-                        loading="lazy"
-                        src={chairmanImg}
-                        alt={leader.name}
-                        className="w-12 h-12 rounded-full object-cover"
-                      />
-                      <div>
-                        <p className="font-semibold text-sm">{leader.name}</p>
-                        <p className="text-xs text-gray-500">{leader.title}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Video */}
-              <div className="w-full lg:w-1/2 py-5 relative overflow-hidden">
-                <VideoPlayer
-                  videoRef={videoRef}
-                  overlayVideoRef={overlayVideoRef}
-                />
-              </div>
+            {/* Button */}
+            <div ref={buttonRef} className="flex justify-center">
+              <NavLink
+                to="about/leade
+                    rship"
+                className={cn(
+                  "inline-block font-semibold mt-4 px-6 py-2 rounded-lg",
+                  "special-style border"
+                )}
+              >
+                Read More
+              </NavLink>
             </div>
           </div>
         </div>

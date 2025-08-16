@@ -40,7 +40,7 @@ export default function HomePage() {
     <>
       <div className={cn("relative", "", "")}>
         <HeroSection />
-        {/* <LeadershipSection /> */}
+        <LeadershipSection />
         {/* 
         <AboutSection />
         <WhyChooseUs />
