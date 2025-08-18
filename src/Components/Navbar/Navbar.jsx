@@ -93,7 +93,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden z-50 text-primary mx-auto xs:mx-0"
+            className="lg:hidden z-50 text-primary  "
             aria-label="Toggle Menu"
           >
             {isMenuOpen ? <X size={40} /> : <Menu size={40} />}
