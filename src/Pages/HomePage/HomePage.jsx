@@ -40,11 +40,11 @@ export default function HomePage() {
     <>
       <div className={cn("relative", "", "")}>
         <HeroSection />
+        <OurSolutionsSection />
+        {/* <AboutSection /> */}
         <LeadershipSection />
         {/* 
-        <AboutSection />
         <WhyChooseUs />
-        <OurSolutionsSection />
 
         <GalleryContextProvider>
           <GallerySection />
