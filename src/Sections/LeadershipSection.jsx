@@ -6,21 +6,17 @@ import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import chairmanMessage from "../Data/chairmanMessage";
-
-
-
+import AnimatedOverlay from "../Components/AnimatedOverlay/AnimatedOverlay";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function LeadershipSection() {
   const imageRef = useRef(null);
   const overlayImageRef = useRef(null);
-  const textRef = useRef(null);
 
   const headingRef = useRef(null);
   const quoteRef = useRef(null);
   const buttonRef = useRef(null);
-  const overlayVideoRef = useRef(null);
   // const videoRef = useRef(null);
   const textSectionRef = useRef(null);
 
@@ -30,35 +26,6 @@ export default function LeadershipSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // 🎬 Timeline 1: Visuals
-      const tlVisual = gsap.timeline({
-        scrollTrigger: {
-          trigger: imageRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      });
-
-      tlVisual.fromTo(
-        overlayImageRef.current,
-        { x: "0%" },
-        { x: "100%", ease: "power2.out", duration: 1.2 }
-      );
-
-      tlVisual.fromTo(
-        overlayVideoRef.current,
-        { x: "0%" },
-        { x: "-100%", ease: "power2.out", duration: 1.2 },
-        "-=1"
-      );
-
-      tlVisual.fromTo(
-        textRef.current,
-        { x: -50, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
-        "-=0.6"
-      );
-
       // 🎯 Timeline 2: Text content
       const tlText = gsap.timeline({
         scrollTrigger: {
@@ -135,21 +102,15 @@ export default function LeadershipSection() {
   return (
     <section
       id="leadershipSection"
-      className={cn("py-20 bg-white relative overflow-hidden bg-cover bg-center h-screen md:bg-fixed")}
+      className={cn(
+        "py-32 bg-white relative overflow-hidden bg-cover bg-center  "
+      )}
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-primary/70 z-10" />
+      <div className="absolute inset-0 bg-hover/50 z-10" />
       {/* Heading */}
-      {/* <div className="mb-12">
-        <h3
-          ref={headingRef}
-          className="text-3xl text-center md:text-4xl font-extrabold text-primary tracking-wide mb-2"
-        >
-          Leadership to Inspire & Encourage
-        </h3>
-      </div> */}
-      <div className="container mx-auto px-4 flex flex-col justify-center items-center gap-10 z-50 relative">
+      <div className="container mx-auto px-4 flex flex-col-reverse justify-center items-center gap-10 z-50 relative">
         {/* Image */}
         <div className="w-1/2 space-y-4 ">
           <div
@@ -159,7 +120,12 @@ export default function LeadershipSection() {
               "py-3"
             )}
           >
-            <div className="img-box w-60 h-60 overflow-hidden rounded-xl shadow-md shadow-hover group relative ">
+            <div
+              className={cn(
+                "img-box w-40 h-40 overflow-hidden rounded-xl shadow-md shadow-secColor group relative ",
+                "hover:rotate-2 duration-300"
+              )}
+            >
               <img
                 ref={imageRef}
                 loading="lazy"
@@ -168,30 +134,43 @@ export default function LeadershipSection() {
                 className={cn(
                   "w-full h-full object-cover object-top",
                   "group-hover:scale-125 duration-300"
+                  // "group-hover:rotate-2"
                 )}
               />
-              <div
-                ref={overlayImageRef}
-                className="absolute inset-0 bg-white z-10"
-              />
+              <AnimatedOverlay imgRef={imageRef} />
             </div>
           </div>
           <div className="text-center">
-            <p className="font-semibold text-lg text-white">{chairmanMessage.title}</p>
-            <p className="text-xs text-gray-300">{chairmanMessage.position}</p>
+            <p className="font-semibold text-lg text-white">
+              {chairmanMessage.author}
+            </p>
+            <p className="text-sm text-secColor font-bold">
+              {chairmanMessage.position}
+            </p>
           </div>
         </div>
 
         {/* Right Side */}
         <div ref={textSectionRef} className="w-full lg:w-1/2">
           <div className="space-y-4 text-center">
+            <div className="flex items-center justify-center py-10 text-secColor">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-32 h-32"
+              >
+                <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6v-6H5.17A3.17 3.17 0 0 1 8.34 9h1.83V6H7.17Zm10 0A5.17 5.17 0 0 0 12 11.17V18h6v-6h-2.83A3.17 3.17 0 0 1 18.34 9h1.83V6h-3Z" />
+              </svg>
+            </div>
+
             {/* Quote */}
-            <p ref={quoteRef} className="italic text-white font-bold">
-              “{chairmanMessage.shortMsg}
+            <p ref={quoteRef} className="italic text-white font-bold text-xl">
+              {chairmanMessage.shortMsg}
             </p>
 
             {/* Button */}
-            <div ref={buttonRef} className="flex justify-center">
+            {/* <div ref={buttonRef} className="flex justify-center">
               <NavLink
                 to="about/leade
                     rship"
@@ -202,7 +181,7 @@ export default function LeadershipSection() {
               >
                 Read More
               </NavLink>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
