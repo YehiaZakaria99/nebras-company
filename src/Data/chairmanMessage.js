@@ -1,8 +1,7 @@
 const chairmanMessage = {
   title: "Chairman’s Message",
-  shortMsg: `It is with great pride that I extend my greetings to you on behalf of Earth Cresset Contracting Co.
-    Over the past two decades, our company has built a solid reputation as a trusted partner in delivering high-quality,
-    cost-efficient, and timely solutions in the fields of construction, pipelines, and mechanical works across the Kingdom....`,
+  shortMsg: `“For more than three decades of track record, SISCO has sustained its commitment to top-tier safety and quality standards, relying on its exceptional client-focus approach and leading technical expertise.  Built upon our solid foundation, our long-term vision sets an ambitious goal for SISCO to become the Kingdom’s undisputed partner of choice in our industry”.
+`,
   longMsg: `
     It is with great pride that I extend my greetings to you on behalf of Earth Cresset Contracting Co.
     Over the past two decades, our company has built a solid reputation as a trusted partner in delivering high-quality,
