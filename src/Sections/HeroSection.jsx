@@ -45,7 +45,7 @@ export default function HeroSection() {
   return (
     <section
       id="heroSection"
-      className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-white via-primary to-primary"
+      className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-white via-hover to-hover"
     >
       <IntroOverlay />
 
@@ -61,7 +61,7 @@ export default function HeroSection() {
               /> */}
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-b from-white via-hover/40 to-primary/40 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-hover/70  z-10" />
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 ">
