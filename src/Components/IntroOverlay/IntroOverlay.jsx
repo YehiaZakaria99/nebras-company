@@ -51,10 +51,10 @@ export default function IntroOverlay() {
   if (!visible) return null;
 
   return (
-    <div ref={observerRef} className="absolute inset-0 z-50">
+    <div ref={observerRef} className="absolute inset-0 z-[99999999999]">
       <div
         ref={overlayRef}
-        className="absolute inset-0 bg-white"
+        className="absolute inset-0 bg-hover"
         style={{ transform: "translateX(0%)" }}
       />
     </div>
