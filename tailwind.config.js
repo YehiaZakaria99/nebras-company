@@ -9,11 +9,11 @@ export default {
       },
       colors: {
         primary: "#292C62",
-        hover: "#75ba75",
+        hover: "#397c39",
         active: "#75ba75",
         navbar: "#F8F9FA",
         hero: "#F0F1F5",
-        secColor: "#fec76f",
+        secColor: "#bb8631",
         test: "#71a3c1",
 
       },
