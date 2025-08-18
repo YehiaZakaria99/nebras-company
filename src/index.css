@@ -37,10 +37,10 @@
     --primary-2: #393d8a;
     --navbar: #f8f9fa;
     --hero: #f0f1f5;
-    --hover: #75ba75;
-    --active: #75ba75;
+    --hover: #397c39;
+    --active: #397c39;
     --test: #71a3c1;
-    --sec-color: #fec76f;
+    --sec-color: #bb8631;
   }
 
   html {
@@ -83,75 +83,11 @@
 
 .custom-scrollbar {
   scrollbar-width: 30px;
-  scrollbar-color: var(--primary) var(--navbar);
+  scrollbar-color: var(--hover) var(--navbar);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-  height: 0;
-  transition: 0.3s;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f5f9;
-  border-radius: 8px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--active);
-  border-radius: 10px;
-  border: 2px solid var(--navbar);
-  transition: 0.5s;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: var(--hover);
-}
-
-/* Gradiant Text */
-
-.text-bg {
-  background: linear-gradient(
-    270deg,
-    var(--primary) 20%,
-    /* var(--hover) 60%, */ #fff 70%
-  );
-  -webkit-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -o-te-webkit-text-fill-color: transparent;
-  -moz-te-webkit-text-fill-color: transparent;
-  line-height: 150%;
-  position: relative;
-  z-index: 2;
-  /* font-weight: 700; */
-  display: inline-block;
-}
-
-.text-bg-hero {
-  background: linear-gradient(
-    270deg,
-    #fff 20%,
-    var(--hover) 60%,
-    var(--primary) 70%
-  );
-  -webkit-background-clip: text;
-  -o-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -o-te-webkit-text-fill-color: transparent;
-  -moz-te-webkit-text-fill-color: transparent;
-  line-height: 150%;
-  position: relative;
-  z-index: 2;
-  /* font-weight: 700; */
-  display: inline-block;
-}
 
 .swap {
   font-display: swap;
