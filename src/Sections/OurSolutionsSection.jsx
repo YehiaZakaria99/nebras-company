@@ -79,7 +79,7 @@ export default function OurSolutionsSection() {
   // Animation
 
   return (
-    <section className="py-16 bg-gray-100 overflow-hidden">
+    <section className="py-16 bg-gray-100 overflow-hidden" id="ourSolutionsSection">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <div className="mb-12">
           <h3
