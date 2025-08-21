@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
         ))}
       </Slider>
-      <ScrollDown to="leadershipSection" />
+      <ScrollDown to="ourSolutionsSection" />
     </section>
   );
 }
