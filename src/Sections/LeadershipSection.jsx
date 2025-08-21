@@ -36,12 +36,12 @@ export default function LeadershipSection() {
       });
 
       // 🪄 Heading from left
-      tlText.from(headingRef.current, {
-        x: -50,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power2.out",
-      });
+      // tlText.from(headingRef.current, {
+      //   x: -50,
+      //   opacity: 0,
+      //   duration: 0.6,
+      //   ease: "power2.out",
+      // });
 
       // 🪄 Quote from right
       tlText.from(
@@ -56,44 +56,44 @@ export default function LeadershipSection() {
       );
 
       // 🪄 List items from bottom
-      tlText.from(
-        listRefs.current,
-        {
-          y: 30,
-          opacity: 0,
-          duration: 0.5,
-          ease: "power2.out",
-          stagger: 0.2,
-        },
-        "-=0.4"
-      );
+      // tlText.from(
+      //   listRefs.current,
+      //   {
+      //     y: 30,
+      //     opacity: 0,
+      //     duration: 0.5,
+      //     ease: "power2.out",
+      //     stagger: 0.2,
+      //   },
+      //   "-=0.4"
+      // );
 
       // 🪄 Button from bottom
-      tlText.from(buttonRef.current, {
-        y: 30,
-        opacity: 0,
-        duration: 0.5,
-        ease: "power2.out",
-      });
+      // tlText.from(buttonRef.current, {
+      //   y: 30,
+      //   opacity: 0,
+      //   duration: 0.5,
+      //   ease: "power2.out",
+      // });
 
       // 🪄 Leaders from opposite sides
-      tlText.from(leaderRefs.current[0], {
-        x: -30,
-        opacity: 0,
-        duration: 0.5,
-        ease: "power2.out",
-      });
+      // tlText.from(leaderRefs.current[0], {
+      //   x: -30,
+      //   opacity: 0,
+      //   duration: 0.5,
+      //   ease: "power2.out",
+      // });
 
-      tlText.from(
-        leaderRefs.current[1],
-        {
-          x: 30,
-          opacity: 0,
-          duration: 0.5,
-          ease: "power2.out",
-        },
-        "-=0.3"
-      );
+      // tlText.from(
+      //   leaderRefs.current[1],
+      //   {
+      //     x: 30,
+      //     opacity: 0,
+      //     duration: 0.5,
+      //     ease: "power2.out",
+      //   },
+      //   "-=0.3"
+      // );
     });
 
     return () => ctx.revert();
