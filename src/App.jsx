@@ -28,33 +28,33 @@ function App() {
       element: <Layout />,
       children: [
         { index: true, element: <HomePage /> },
-        // {
-        //   path: "about",
-        //   element: <AboutPage />,
-        //   children: [
-        //     { path: "/about/leadership", element: <LeadershipPage /> },
-        //     { path: "/about/our-equipments", element: <OurEquipments /> },
-        //     { path: "/about/introduction", element: <GSPIntroduction /> },
-        //     { path: "/about/information", element: <GSPInformation /> },
-        //     {
-        //       path: "/about/organizational-chart",
-        //       element: <OrganizationalChart />,
-        //     },
-        //     { path: "/about/our-man-power", element: <OurManPower /> },
-        //     { path: "/about/owned-machines", element: <OwnedMachines /> },
-        //     { path: "/about/financial-status", element: <FinancialStatus /> },
-        //   ],
-        // },
+        {
+          path: "about",
+          element: <AboutPage />,
+          children: [
+            { path: "/about/our-equipments", element: <OurEquipments /> },
+            // { path: "/about/leadership", element: <LeadershipPage /> },
+            // { path: "/about/introduction", element: <GSPIntroduction /> },
+            // { path: "/about/information", element: <GSPInformation /> },
+            // {
+            //   path: "/about/organizational-chart",
+            //   element: <OrganizationalChart />,
+            // },
+            // { path: "/about/our-man-power", element: <OurManPower /> },
+            // { path: "/about/owned-machines", element: <OwnedMachines /> },
+            // { path: "/about/financial-status", element: <FinancialStatus /> },
+          ],
+        },
         // { path: "ourSolutions", element: <OurSolutionsPage /> },
         // { path: "ourExperience", element: <OurExperiencePage /> },
-        // {
-        //   path: "gallery",
-        //   element: (
-        //     <GalleryContextProvider>
-        //       <GalleryPage />
-        //     </GalleryContextProvider>
-        //   ),
-        // },
+        {
+          path: "gallery",
+          element: (
+            <GalleryContextProvider>
+              <GalleryPage />
+            </GalleryContextProvider>
+          ),
+        },
         // { path: "contact", element: <ContactPage /> },
         { path: "*", element: <NotFoundPage /> },
       ],
