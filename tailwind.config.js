@@ -13,7 +13,7 @@ export default {
         active: "#75ba75",
         navbar: "#F8F9FA",
         hero: "#F0F1F5",
-        secColor: "#bb8631",
+        secColor: "#be7d30",
         test: "#71a3c1",
 
       },
