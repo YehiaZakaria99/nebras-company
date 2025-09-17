@@ -45,7 +45,7 @@ function App() {
             // { path: "/about/financial-status", element: <FinancialStatus /> },
           ],
         },
-        // { path: "ourSolutions", element: <OurSolutionsPage /> },
+        { path: "ourSolutions", element: <OurSolutionsPage /> },
         // { path: "ourExperience", element: <OurExperiencePage /> },
         {
           path: "gallery",
