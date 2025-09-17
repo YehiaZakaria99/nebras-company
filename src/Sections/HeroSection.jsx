@@ -45,23 +45,19 @@ export default function HeroSection() {
   return (
     <section
       id="heroSection"
-      className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-white via-hover to-hover"
+      className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-black/80 to-secColor/80"
     >
       <IntroOverlay />
 
       <Slider {...settings}>
         {slides.map((src, index) => (
           <div key={index}>
-            <div className="relative h-screen bg-cover bg-center py-5 " style={{backgroundImage: `url(${src})`}}>
-              {/* <img
-                // loading="lazy"
-                src={src}
-                alt={`slider${index}`}
-                className="absolute inset-0  w-full object-cover object-center z-0 transition-opacity duration-1000"
-              /> */}
-
+            <div
+              className="relative h-screen bg-cover bg-center py-5"
+              style={{ backgroundImage: `url(${src})` }}
+            >
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-hover/70  z-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-secColor/80 z-10" />
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 ">
