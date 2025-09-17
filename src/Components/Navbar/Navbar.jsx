@@ -49,7 +49,7 @@ export default function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 w-full z-[9999999999999999999] transition-all duration-300",
+          "sticky top-0 left-0 w-full z-[9999999999999999999] transition-all duration-300",
           isScrolled
             ? "bg-white shadow-md py-1"
             : " py-4 "
