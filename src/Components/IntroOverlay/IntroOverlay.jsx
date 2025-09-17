@@ -26,7 +26,7 @@ export default function IntroOverlay() {
     <div className="absolute inset-0 z-[99999999999]">
       <div
         ref={overlayRef}
-        className="absolute inset-0 bg-hover"
+        className="absolute inset-0 bg-white"
         style={{ transform: "translateX(0%)" }}
       />
     </div>
