@@ -106,13 +106,13 @@ export default function OurSolutionsSection() {
               style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
               key={idx}
               className={cn(
-                "bg-white rounded-2xl overflow-hidden  shadow-md h-[30rem] border-hover ",
+                "bg-white rounded-2xl overflow-hidden  shadow-md shadow-secColor h-[30rem] border-hover ",
                 "transition-all duration-300 transform group ",
                 "relative hover:scale-[1.02] ",
                 idx % 2 === 0 ? "hover:rotate-2" : "hover:-rotate-2"
               )}
             >
-              <div className="img-box h-full relative  ">
+              <div className="img-box h-full relative ">
                 <img
                   // ref={imgRef}
                   loading="lazy"
@@ -127,7 +127,7 @@ export default function OurSolutionsSection() {
 
                 <div
                   className={cn(
-                    "overlay absolute inset-0 z-10 bg-hover/50",
+                    "overlay absolute inset-0 z-10 bg-gradient-to-br from-black/80 to-secColor/50",
                     "transition duration-300"
                   )}
                 ></div>
