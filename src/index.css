@@ -40,7 +40,7 @@
     --hover: #397c39;
     --active: #397c39;
     --test: #71a3c1;
-    --sec-color: #bb8631;
+    --sec-color: #be7d30;
   }
 
   html {
@@ -87,7 +87,6 @@
   overflow-x: hidden;
   transition: 0.5s;
 }
-
 
 .swap {
   font-display: swap;
