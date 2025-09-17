@@ -17,7 +17,7 @@ export default function AnimatedOverlay({ imgRef }) {
       tlVisual.fromTo(
         overlayRef.current,
         { x: "0%" },
-        { x: "100%", ease: "power2.out", duration: 1.2 }
+        { x: "100%", ease: "power2.out", duration: 2 }
       );
 
       //   tlVisual.fromTo(
@@ -32,7 +32,7 @@ export default function AnimatedOverlay({ imgRef }) {
   });
   return (
     <>
-      <div ref={overlayRef} className="absolute inset-0 bg-hover z-[10]" />
+      <div ref={overlayRef} className="absolute inset-0 bg-white z-[10]" />
     </>
   );
 }
