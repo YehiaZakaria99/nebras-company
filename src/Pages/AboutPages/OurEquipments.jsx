@@ -102,10 +102,13 @@ export default function OurEquipments() {
       <section className="relative our-equipments">
         <IntroOverlay />
         <section
-          className="mb-20 relative px-6 md:px-16 py-5 md:py-10  flex flex-col-reverse md:flex-row items-center gap-10 bg-cover h-[300px] md:h-[450px] lg:h-[550px] md:bg-fixed bg-center  shadow-xl overflow-hidden"
+          className={cn(
+            "mb-20 relative px-6 md:px-16 py-5 md:py-10 bg-cover h-[300px] md:h-[450px] lg:h-[550px] md:bg-fixed bg-center  shadow-xl overflow-hidden",
+            "flex flex-col-reverse md:flex-row items-center gap-10"
+          )}
           style={{ backgroundImage: `url(${bgImg})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-hover/70 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-hover/80 z-10" />
           <div className="md:w-1/2 space-y-4 z-20 text-center md:text-left">
             <h1
               className={cn(
