@@ -72,7 +72,7 @@ export default function AboutDropdown({
                   handleClick();
                 }}
                 className={cn(
-                  isMobile ? "text-sm" : "text-md ",
+                  isMobile ? "text-xs" : "text-sm ",
                   "aboutLinksStyle "
                 )}
               >
