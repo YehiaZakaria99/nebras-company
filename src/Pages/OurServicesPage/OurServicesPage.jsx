@@ -8,8 +8,13 @@ import technicalImg from "/GalleryPage/32.webp";
 
 import { cn } from "../../lib/utils";
 import OurServicesPageCard from "../../Components/OurServicesPageCard/OurServicesPageCard";
+import { useEffect } from "react";
 
 export default function OurServicesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const services = [
     {
       id: 0,
