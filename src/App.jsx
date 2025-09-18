@@ -5,7 +5,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Pages/LayoutPage/Layout";
 import AboutPage from "./Pages/AboutPages/AboutPage";
-import OurSolutionsPage from "./Pages/OurSolutionsPage/OurSolutionsPage";
 import OurExperiencePage from "./Pages/OurExperiencePages/OurExperiencePage";
 import GalleryPage from "./Pages/GalleryPage/GalleryPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
@@ -19,9 +18,9 @@ import LeadershipPage from "./Pages/AboutPages/LeadershipPage";
 import GalleryContextProvider from "./Context/GalleryContext";
 import OurEquipments from "./Pages/AboutPages/OurEquipments";
 import GSPIntroduction from "./Pages/AboutPages/GSPIntroduction/GSPIntroduction";
+import OurServicesPage from "./Pages/OurServicesPage/OurServicesPage";
 
 function App() {
-
   const routers = createBrowserRouter([
     {
       path: "",
@@ -45,16 +44,16 @@ function App() {
             // { path: "/about/financial-status", element: <FinancialStatus /> },
           ],
         },
-        { path: "ourSolutions", element: <OurSolutionsPage /> },
+        { path: "ourServices", element: <OurServicesPage /> },
         // { path: "ourExperience", element: <OurExperiencePage /> },
-        {
-          path: "gallery",
-          element: (
-            <GalleryContextProvider>
-              <GalleryPage />
-            </GalleryContextProvider>
-          ),
-        },
+        // {
+        //   path: "gallery",
+        //   element: (
+        //     <GalleryContextProvider>
+        //       <GalleryPage />
+        //     </GalleryContextProvider>
+        //   ),
+        // },
         // { path: "contact", element: <ContactPage /> },
         { path: "*", element: <NotFoundPage /> },
       ],
