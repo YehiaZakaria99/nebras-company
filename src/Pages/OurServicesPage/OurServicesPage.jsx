@@ -1,4 +1,4 @@
-import bgImg from "/OurSolutionsPage/bgImg.webp";
+import bgImg from "/OurServicesPage/bgImg.webp";
 
 import constructionImg from "/GalleryPage/33.webp";
 import pipelinesImg from "/GalleryPage/35.webp";
@@ -39,7 +39,7 @@ export default function OurServicesPage() {
       {/* Header Section */}
       <section
         className={cn(
-          "relative px-6 md:px-16 py-10 mb-20 flex flex-col-reverse md:flex-row items-center gap-10 bg-cover h-[300px] md:h-[450px] lg:h-[500px] md:bg-fixed bg-bottom shadow-xl overflow-hidden",
+          "relative px-6 md:px-16 py-10 mb-20 flex flex-col-reverse md:flex-row items-center gap-10 bg-cover h-[300px] md:h-[450px] lg:h-[500px] md:bg-fixed bg-center shadow-xl overflow-hidden",
           "header"
         )}
         style={{ backgroundImage: `url(${bgImg})` }}
@@ -67,7 +67,11 @@ export default function OurServicesPage() {
       {/* Services Cards */}
       <section>
         {services.map((service, index) => (
-          <OurServicesPageCard key={service.id} service={service} index={index} />
+          <OurServicesPageCard
+            key={service.id}
+            service={service}
+            index={index}
+          />
         ))}
       </section>
     </section>
