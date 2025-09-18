@@ -4,7 +4,12 @@ import AnimatedOverlay from "../AnimatedOverlay/AnimatedOverlay";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
-export default function OurServicesSectionCard({service, idx , imgRef, btnRef}) {
+export default function OurServicesSectionCard({
+  service,
+  idx,
+  imgRef,
+  btnRef,
+}) {
   return (
     <>
       <div
@@ -50,20 +55,20 @@ export default function OurServicesSectionCard({service, idx , imgRef, btnRef}) 
           <h3 className="text-xl md:text-2xl lg:text-4xl font-bold transform group-hover:-translate-y-5 transition-all duration-300">
             {service.title}
           </h3>
-                  {/* Button */}
-        <div className="mt-12  overflow-hidden">
-          <Link
-            ref={btnRef}
-            to="/ourServices"
-            className={cn(
-              "inline-flex items-center transform  gap-2 text-md px-8 py-4 rounded-md border bg-secColor text-white ",
-              " transition-all duration-300 font-bold group"
-            )}
-          >
-            See More
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </Link>
-        </div>
+          {/* Button */}
+          <div className="mt-12  overflow-hidden">
+            <Link
+              ref={btnRef}
+              to="/ourServices"
+              className={cn(
+                "inline-flex items-center transform  gap-2  md:px-8 md:py-4 text-xs md:text-sm lg:text-lg px-4 py-2 rounded-md border bg-secColor text-white ",
+                " transition-all duration-300 font-bold group"
+              )}
+            >
+              See More
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </div>
           {/* <p className="text-sm ">{solution.description}</p> */}
         </div>
       </div>
