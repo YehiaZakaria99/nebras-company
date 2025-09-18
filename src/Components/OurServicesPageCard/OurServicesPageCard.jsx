@@ -54,10 +54,10 @@ export default function OurServicesPageCard({
         <div className="shadow-md shadow-secColor flex flex-col md:flex-row gap-[50px] bg-white text-primary p-8 rounded-xl overflow-hidden w-full max-w-6xl mx-auto">
           {/* Text Section */}
           <div className="w-full md:w-[50%] flex flex-col justify-center space-y-4">
-            <h3 className="text-3xl md:text-4xl font-bold text-primary">
+            <h3 className="text-3xl md:text-4xl font-bold text-secColor">
               {title}
             </h3>
-            <p className="text-primary text-lg leading-relaxed">
+            <p className="text-primary font-bold text-lg leading-relaxed">
               {description}
             </p>
           </div>
