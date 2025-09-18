@@ -39,7 +39,7 @@ export default function Navbar() {
         // { name: "Financial Status", to: "/about/financial-status" },
       ],
     },
-    { name: "Our Solutions", to: "ourSolutions" },
+    { name: "Our Services", to: "ourServices" },
     // { name: "Our Experience", to: "ourExperience" },
     { name: "Gallery", to: "gallery" },
     { name: "Contact", to: "contact" },
@@ -50,9 +50,7 @@ export default function Navbar() {
       <nav
         className={cn(
           "sticky top-0 left-0 w-full z-[9999999999999999999] transition-all duration-300",
-          isScrolled
-            ? "bg-white shadow-md py-1"
-            : " py-4 "
+          isScrolled ? "bg-white shadow-md py-1" : " py-4 "
         )}
       >
         <div className="container flex items-center justify-between flex-wrap">
