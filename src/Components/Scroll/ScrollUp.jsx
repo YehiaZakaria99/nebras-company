@@ -10,8 +10,8 @@ export default function ScrollUp({ to }) {
         <Link to={to} smooth={true} duration={0} offset={-50}>
           <div
             className={cn(
-              "border-2 border-hover cursor-pointer rounded-full flex items-start justify-center p-1 mx-auto bg-white text-hover",
-              "transition-all duration-300 hover:bg-hover hover:text-white hover:border-white"
+              "border-2 border-secColor cursor-pointer rounded-full flex items-start justify-center p-1 mx-auto bg-white text-secColor",
+              "transition-all duration-300 hover:bg-secColor hover:text-white hover:border-white"
             )}
           >
             <ArrowUp className=" font-extrabold" size={25} />
