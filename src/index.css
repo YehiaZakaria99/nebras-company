@@ -83,7 +83,7 @@
 
 .custom-scrollbar {
   scrollbar-width: 30px;
-  scrollbar-color: var(--hover) var(--navbar);
+  scrollbar-color: var(--sec-color) var(--navbar);
   overflow-x: hidden;
   transition: 0.5s;
 }
