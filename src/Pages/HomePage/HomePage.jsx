@@ -40,6 +40,7 @@ export default function HomePage() {
     <>
       <div className={cn("relative", "", "")}>
         <HeroSection />
+        <ContactSection />
         <OurServicesSection />
         {/* <AboutSection /> */}
         <LeadershipSection />
@@ -50,7 +51,6 @@ export default function HomePage() {
           <GallerySection />
         </GalleryContextProvider> */}
 
-        {/* <ContactSection /> */}
         {/* <Loading /> */}
         {isScrolled && <ScrollUp to="heroSection" />}
       </div>
