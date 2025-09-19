@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import { cn } from "../../lib/utils";
 
-export default function ContactCard({ icon, title, details }) {
+const ContactCard = React.memo(({ icon, title, details }) => {
   return (
     <>
       <a
@@ -43,4 +43,6 @@ export default function ContactCard({ icon, title, details }) {
       </a>
     </>
   );
-}
+});
+
+export default memo(ContactCard);
