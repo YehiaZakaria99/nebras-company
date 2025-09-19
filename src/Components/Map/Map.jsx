@@ -16,6 +16,7 @@ const Map = React.memo(() => {
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
+      minZoom: 19,
       detectRetina: true,
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
