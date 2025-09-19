@@ -26,7 +26,10 @@ const contactData = [
 
 export default function ContactSection() {
   return (
-    <section id="contactUs" className="relative bg-white py-24 px-4 md:px-12 lg:px-24 xl:px-32 overflow-hidden">
+    <section
+      id="contactUs"
+      className="relative bg-white py-24 px-4 md:px-12 lg:px-24 xl:px-32 overflow-hidden"
+    >
       {/* <div className="absolute top-0 left-0 w-full h-40 bg-secColor/80 rounded-full blur-3xl z-0"></div> */}
       {/* <div className="absolute bottom-0 right-0 w-full h-80 bg-secColor/20 rounded-full blur-3xl z-0"></div> */}
 
