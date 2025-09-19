@@ -44,20 +44,3 @@ export default function ContactCard({ icon, title, details }) {
     </>
   );
 }
-
-/* 
-
-              <a
-                href="mailto:mohammed@gsp-sa.com"
-                className="hover:underline block"
-              >
-                mohammed@gsp-sa.com
-              </a>
-
-              <a
-              href="tel:+966138813042"
-              className="text-sm hover:underline mt-1"
-            >
-              +966 13 881 3042
-            </a>
-*/
