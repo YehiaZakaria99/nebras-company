@@ -137,7 +137,7 @@ export default function LeadershipSection() {
                   // "group-hover:rotate-2"
                 )}
               />
-              <AnimatedOverlay imgRef={imageRef} />
+              {/* <AnimatedOverlay imgRef={imageRef} /> */}
             </div>
           </div>
           <div className="text-center">
