@@ -32,7 +32,7 @@ const OurServicesSectionCard = React.memo(
 
             <div
               className={cn(
-                "overlay absolute inset-0 z-10 bg-gradient-to-br from-black/80 to-secColor/50",
+                "overlay absolute inset-0 z-10 bg-gradient-to-br from-black/40 to-secColor/40",
                 "transition duration-300"
               )}
             ></div>

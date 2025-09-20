@@ -108,7 +108,7 @@ export default function LeadershipSection() {
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tl from-black/80 to-secColor/80 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-tl from-black/60 to-secColor/60 z-10" />
       {/* Heading */}
       <div className="container mx-auto px-4 flex flex-col-reverse justify-center items-center gap-10 z-50 relative">
         {/* Image */}

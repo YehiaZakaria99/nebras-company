@@ -49,7 +49,7 @@ export default function OurServicesPage() {
         )}
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-secColor/80 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 to-secColor/60 z-10" />
         <div className="md:w-1/2 space-y-4 z-20 text-center md:text-left">
           <h1
             className={cn(
