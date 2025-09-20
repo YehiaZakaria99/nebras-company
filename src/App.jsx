@@ -54,7 +54,7 @@ function App() {
         //     </GalleryContextProvider>
         //   ),
         // },
-        // { path: "contact", element: <ContactPage /> },
+        { path: "contact", element: <ContactPage /> },
         { path: "*", element: <NotFoundPage /> },
       ],
     },
