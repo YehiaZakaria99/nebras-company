@@ -24,11 +24,12 @@ const Map = () => {
     const map = L.map("nebras-map", {
       center: [26.30266, 50.21473],
       zoom: 17,
+      scrollWheelZoom : false
     });
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       minZoom: 3,
-      maxZoom: 19,
+      maxZoom: 22,
       detectRetina: true,
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
