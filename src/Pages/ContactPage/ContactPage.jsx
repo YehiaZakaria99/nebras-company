@@ -33,9 +33,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2  gap-10">
         {/* Left - Contact Info & Map */}
         <div className="space-y-8 order-2 md:order-1">
-          <h2 className="text-3xl font-bold mb-4 text-secColor">
-            Get in Touch
-          </h2>
+          <h2 className="text-3xl font-bold mb-4 text-secColor">{""}</h2>
 
           <div className="">
             {/* Map */}
@@ -93,23 +91,21 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="px-4">
-        <div className="grid gap-8 md:grid-cols-3 mb-16">
-          {contactDetails.data.map(({ icon, title, details }, idx) => (
-            <>
-              <div
-                key={`${idx}${title}`}
-                className={cn(
-                  "h-full w-full bg-white border-r-2 border-l-2 border-secColor backdrop-blur-lg rounded-2xl shadow-md",
-                  "transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 hover:shadow-secColor ",
-                  "group"
-                )}
-              >
-                <ContactCard icon={icon} title={title} details={details} />
-              </div>
-            </>
-          ))}
-        </div>
+      <div className="max-w-7xl mx-auto px-4 grid gap-8 md:grid-cols-3 mb-16">
+        {contactDetails.data.map(({ icon, title, details }, idx) => (
+          <>
+            <div
+              key={`${idx}${title}`}
+              className={cn(
+                "h-full w-full bg-white border-b-4 border-l border-secColor backdrop-blur-lg rounded-2xl shadow-md",
+                "transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 hover:shadow-secColor ",
+                "group"
+              )}
+            >
+              <ContactCard icon={icon} title={title} details={details} />
+            </div>
+          </>
+        ))}
       </div>
     </section>
   );
