@@ -2,11 +2,6 @@ import { useEffect } from "react";
 import img1 from "/HomePage/HeroSection/1.webp";
 import img2 from "/HomePage/HeroSection/2.webp";
 import img3 from "/HomePage/HeroSection/3.webp";
-// import img4 from "/HomePage/HeroSection/4.webp";
-
-import { cn } from "../lib/utils";
-import { Link } from "react-scroll";
-
 import { TypeAnimation } from "react-type-animation";
 import Slider from "react-slick";
 import ScrollDown from "./../Components/Scroll/ScrollDown";
@@ -45,7 +40,7 @@ export default function HeroSection() {
   return (
     <section
       id="heroSection"
-      className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-black/80 to-secColor/80"
+      className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-black/40 to-secColor/40"
     >
       <IntroOverlay />
 
@@ -57,7 +52,7 @@ export default function HeroSection() {
               style={{ backgroundImage: `url(${src})` }}
             >
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-secColor/80 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-secColor/40 z-10" />
 
               {/* Content */}
               <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 ">
