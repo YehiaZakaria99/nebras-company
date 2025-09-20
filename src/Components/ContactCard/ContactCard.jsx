@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { cn } from "../../lib/utils";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const ContactCard = React.memo(({ icon, title, details }) => {
   return (
@@ -12,12 +13,7 @@ const ContactCard = React.memo(({ icon, title, details }) => {
             ? `tel:${details[0]}`
             : "#location"
         }
-        className={cn(
-          "h-full bg-white border-t border-b-4 border-secColor backdrop-blur-lg rounded-2xl p-6  shadow-md",
-          "flex flex-col items-center",
-          "transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 hover:shadow-secColor ",
-          "group"
-        )}
+        className={cn("p-6 h-full", "flex flex-col items-center ")}
       >
         {/* icon */}
         <div
@@ -27,7 +23,9 @@ const ContactCard = React.memo(({ icon, title, details }) => {
             "group-hover:bg-secColor group-hover:text-white"
           )}
         >
-          {icon}
+          {icon === "Mail" && <Mail size={24} />}
+          {icon === "Phone" && <Phone size={24} />}
+          {icon === "MapPin" && <MapPin size={24} />}
         </div>
         {/* title */}
         <h3 className="font-bold text-lg text-secColor">{title}</h3>
