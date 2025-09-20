@@ -1,29 +1,9 @@
-import { Mail, MapPin, Phone, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { cn } from "./../lib/utils";
 import ContactCard from "../Components/ContactCard/ContactCard";
 import Map from "../Components/Map/Map";
-
-const contactData = [
-  {
-    icon: <Mail size={24} />,
-    title: "Emails",
-    details: ["Waleed@nebras1.com", "Mutab@nebras1.com"],
-  },
-  {
-    icon: <Phone size={24} />,
-    title: "Phone",
-    details: ["+966 59 888 8924"],
-  },
-  {
-    icon: <MapPin size={24} />,
-    title: "Location",
-    details: [
-      "Prince Faisl bin Fahd bin Abdulaziz Steet Cross 1 Ibn Jabr, Bandriyah,",
-      "Al Shamalia, Al Khobar - 34427 Saudi Arabia",
-    ],
-  },
-];
+import contactDetails from "../Data/contactDetails.json";
 
 export default function ContactSection() {
   return (
@@ -48,13 +28,23 @@ export default function ContactSection() {
 
         {/* Contact Cards */}
         <div className="grid gap-8 md:grid-cols-3 mb-16">
-          {contactData.map(({ icon, title, details }, idx) => (
-            <div
-              key={`${idx}${title}`}
-              className="transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg rounded-xl"
-            >
-              <ContactCard icon={icon} title={title} details={details} />
-            </div>
+          {contactDetails.data.map(({ icon, title, details }, idx) => (
+            <>
+              <div
+                key={`${idx}${title}`}
+                className="transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg rounded-xl"
+              >
+                <div
+                  className={cn(
+                    "h-full w-full bg-white border-t border-b-4 border-secColor backdrop-blur-lg rounded-2xl shadow-md",
+                    "transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 hover:shadow-secColor ",
+                    "group"
+                  )}
+                >
+                  <ContactCard icon={icon} title={title} details={details} />
+                </div>
+              </div>
+            </>
           ))}
         </div>
 

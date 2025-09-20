@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "icon": "Mail",
+      "title": "Emails",
+      "details": ["Waleed@nebras1.com", "Mutab@nebras1.com"]
+    },
+    {
+      "icon": "Phone",
+      "title": "Phone",
+      "details": ["+966 59 888 8924"]
+    },
+    {
+      "icon": "MapPin",
+      "title": "Location",
+      "details": [
+        "Prince Faisl bin Fahd bin Abdulaziz Steet Cross 1 Ibn Jabr, Bandriyah,",
+        "Al Shamalia, Al Khobar - 34427 Saudi Arabia"
+      ]
+    }
+  ]
+}
