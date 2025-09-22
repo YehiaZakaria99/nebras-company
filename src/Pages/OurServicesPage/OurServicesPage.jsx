@@ -61,7 +61,6 @@ export default function OurServicesPage() {
           </h1>
           <p
             className="text-white text-lg md:text-2xl max-w-md font-bold"
-            data-aos="fade-left"
           >
             We offer a wide range of services, with our core business focused on
             earthwork activities.

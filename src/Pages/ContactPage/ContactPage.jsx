@@ -19,10 +19,7 @@ export default function ContactPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-bg leading-tight drop-shadow-xl text-secColor">
             Contact Us
           </h1>
-          <p
-            className="text-white text-lg md:text-2xl max-w-md font-bold"
-            data-aos="fade-left"
-          >
+          <p className="text-white text-lg md:text-2xl max-w-md font-bold">
             Reach out to us for any inquiries, collaborations, or support. Our
             team is always ready to assist you.
           </p>
