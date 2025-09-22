@@ -32,7 +32,7 @@ function App() {
           element: <AboutPage />,
           children: [
             { path: "/about/our-equipments", element: <OurEquipments /> },
-            // { path: "/about/leadership", element: <LeadershipPage /> },
+            { path: "/about/leadership", element: <LeadershipPage /> },
             // { path: "/about/introduction", element: <GSPIntroduction /> },
             // { path: "/about/information", element: <GSPInformation /> },
             // {
