@@ -4,6 +4,7 @@ import { cn } from "./../lib/utils";
 import ContactCard from "../Components/ContactCard/ContactCard";
 import Map from "../Components/Map/Map";
 import contactDetails from "../Data/contactDetails.json";
+import { Fragment } from "react";
 
 export default function ContactSection() {
   return (
@@ -29,11 +30,8 @@ export default function ContactSection() {
         {/* Contact Cards */}
         <div className="grid gap-8 md:grid-cols-3 mb-16">
           {contactDetails.data.map(({ icon, title, details }, idx) => (
-            <>
-              <div
-                key={`${idx}${title}`}
-                className="transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg rounded-xl"
-              >
+            <Fragment key={`${idx}${title}`}>
+              <div className="transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg rounded-xl">
                 <div
                   className={cn(
                     "h-full w-full bg-white border-t border-b-4 border-secColor backdrop-blur-lg rounded-2xl shadow-md",
@@ -44,7 +42,7 @@ export default function ContactSection() {
                   <ContactCard icon={icon} title={title} details={details} />
                 </div>
               </div>
-            </>
+            </Fragment>
           ))}
         </div>
 
