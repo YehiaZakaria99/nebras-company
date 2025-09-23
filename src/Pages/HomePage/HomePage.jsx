@@ -12,6 +12,7 @@ import GalleryContextProvider from "../../Context/GalleryContext";
 import IntroOverlay from "../../Components/IntroOverlay/IntroOverlay";
 import Loading from "./../../Components/Loading/Loading";
 import OurServicesSection from "../../Sections/OurServicessSection";
+// import FutureSection from "../../Sections/FutureSection";
 
 export default function HomePage() {
   useEffect(() => {
@@ -40,10 +41,11 @@ export default function HomePage() {
     <>
       <div className={cn("relative", "", "")}>
         <HeroSection />
-        <ContactSection />
         <OurServicesSection />
-        {/* <AboutSection /> */}
         <LeadershipSection />
+        {/* <FutureSection /> */}
+        <ContactSection />
+        {/* <AboutSection /> */}
         {/* 
         <WhyChooseUs />
 
