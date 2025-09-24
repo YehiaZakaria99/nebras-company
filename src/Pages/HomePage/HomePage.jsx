@@ -12,7 +12,7 @@ import GalleryContextProvider from "../../Context/GalleryContext";
 import IntroOverlay from "../../Components/IntroOverlay/IntroOverlay";
 import Loading from "./../../Components/Loading/Loading";
 import OurServicesSection from "../../Sections/OurServicessSection";
-// import FutureSection from "../../Sections/FutureSection";
+import FutureSection from "../../Sections/FutureSection";
 
 export default function HomePage() {
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function HomePage() {
         <HeroSection />
         <OurServicesSection />
         <LeadershipSection />
-        {/* <FutureSection /> */}
+        <FutureSection />
         <ContactSection />
         {/* <AboutSection /> */}
         {/* 
