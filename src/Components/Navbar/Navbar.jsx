@@ -29,8 +29,8 @@ export default function Navbar() {
       name: "About",
       to: "about",
       aboutList: [
+        { name: "Leadership", to: "/about/leadership" },
         { name: "Our Equipments", to: "/about/our-equipments" },
-        // { name: "Leadership", to: "/about/leadership" },
         // { name: "Introduction", to: "/about/introduction" },
         // { name: "Information", to: "/about/information" },
         // { name: "Organizational Chart", to: "/about/organizational-chart" },
@@ -41,7 +41,7 @@ export default function Navbar() {
     },
     { name: "Our Services", to: "ourServices" },
     // { name: "Our Experience", to: "ourExperience" },
-    { name: "Gallery", to: "gallery" },
+    // { name: "Gallery", to: "gallery" },
     { name: "Contact", to: "contact" },
   ];
 
