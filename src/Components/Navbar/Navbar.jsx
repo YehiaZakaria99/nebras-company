@@ -31,9 +31,9 @@ export default function Navbar() {
       aboutList: [
         { name: "Leadership", to: "/about/leadership" },
         { name: "Our Equipments", to: "/about/our-equipments" },
+        { name: "Organizational Chart", to: "/about/organizational-chart" },
         // { name: "Introduction", to: "/about/introduction" },
         // { name: "Information", to: "/about/information" },
-        // { name: "Organizational Chart", to: "/about/organizational-chart" },
         // { name: "Our Man Power", to: "/about/our-man-power" },
         // { name: "Owned Machines", to: "/about/owned-machines" },
         // { name: "Financial Status", to: "/about/financial-status" },
