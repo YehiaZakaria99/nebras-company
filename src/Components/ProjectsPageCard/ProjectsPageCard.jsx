@@ -23,5 +23,4 @@ const ProjectsPageCard = React.memo(function ProjectCard({ src, alt, index }) {
     </PhotoView>
   );
 });
-
 export default ProjectsPageCard;
