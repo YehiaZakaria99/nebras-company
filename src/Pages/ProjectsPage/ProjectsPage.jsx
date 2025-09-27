@@ -22,7 +22,8 @@ export default function ProjectsPage() {
             Our Projects
           </h1>
           <p className="text-white text-lg md:text-2xl max-w-2xl font-bold">
-            Explore our structure and meet the amazing team leading our company.
+            Through our projects, we showcase the trust we’ve earned and the
+            standards we uphold in every detail.
           </p>
         </div>
       </div>
