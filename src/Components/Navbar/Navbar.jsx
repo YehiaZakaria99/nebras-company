@@ -39,6 +39,7 @@ export default function Navbar() {
         // { name: "Financial Status", to: "/about/financial-status" },
       ],
     },
+    { name: "Our Projects", to: "projects" },
     { name: "Our Services", to: "ourServices" },
     // { name: "Our Experience", to: "ourExperience" },
     // { name: "Gallery", to: "gallery" },
