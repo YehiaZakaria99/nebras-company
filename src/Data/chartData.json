@@ -1,134 +1,129 @@
 {
   "headManagement": {
-    "name": "Mohammed Al Assmi",
-    "title": "CEO",
+    "name": "Mutaeb Al Hajri",
+    "title": "Chairman",
     "children": [
       {
-        "name": "Mutaeb Al Hajri",
-        "title": "Executive Director",
-        "children": [
-          {
-            "name": "Mohammed Sajid",
-            "title": "QC Manager"
-          },
-          {
-            "name": "Mohsin Raza",
-            "title": "HSE Manager"
-          },
-
-          {
-            "name": "Shahid Siddique",
-            "title": "Planning Manager"
-          },
-          {
-            "name": "Iftikhar Sikandar",
-            "title": "Operations Manager"
-          },
-          {
-            "name": "Osama Saleh",
-            "title": "Finance Manager"
-          },
-          {
-            "name": "Abdullah Al Hajri",
-            "title": "Maintenance Manager"
-          },
-          {
-            "name": "Abdullah Al Qahtani",
-            "title": "CFO"
-          },
-          {
-            "name": "Zafir Ullah Khan",
-            "title": "Project Manager"
-          }
-        ]
+        "name": "Alaa Al Essa",
+        "title": "Director Secretary"
+      },
+      {
+        "name": "Mohammed Rashid Khan",
+        "title": "Project Director"
       }
     ]
   },
-  "HSE": {
-    "name": "Mohsin Raza",
-    "title": "HSE Manager",
+  "finance": {
+    "name": "Walaa Al Fahmi",
+    "title": "Finance Manager",
     "children": [
       {
-        "name": "Zahir Ghafoor",
-        "title": "Dy Manager HSE",
-        "children": [
-          {
-            "title": "Safety Officer"
-          },
-          {
-            "title": "Safety Officer"
-          },
-          {
-            "title": "Safety Officer"
-          },
-          {
-            "title": "Safety Officer"
-          }
-        ]
+        "name": "Abdullah Al Hajri",
+        "title": "P&M Manager"
       },
       {
-        "name": "Work Permit Receivers (WPR)",
-        "title": 12
+        "name": "Mohammed Hussain",
+        "title": "HR Manager"
       },
       {
-        "name": "Azeem Sarwar",
-        "title": "HSE Supervisro",
-        "children": [
-          {
-            "title": "Safety Officer"
-          },
-          {
-            "title": "Safety Officer"
-          },
-          {
-            "title": "Safety Officer"
-          },
-          {
-            "title": "Safety Officer"
-          }
-        ]
+        "name": "Suhail Khan",
+        "title": "Account Manager"
+      },
+      {
+        "name": "AlSayed Badr Aldin",
+        "title": "Account Manager"
+      },
+      {
+        "name": "Mariano Camarista",
+        "title": "Admin"
+      },
+      {
+        "name": "Fady Abdullah",
+        "title": "Chief Accountant"
+      },
+      {
+        "name": "Osama",
+        "title": "Accountant"
+      },
+      {
+        "name": "Emam Ali Emam",
+        "title": "Account"
       }
     ]
   },
-  "qualityControl": {
-    "name": "Mohammed Sajid",
-    "title": "QC Manager",
+  "safety": {
+    "name": "Bipin Kumar Singh",
+    "title": "Safety Manager",
     "children": [
       {
-        "name": "Sohail Iqbal ",
-        "title": "Dy Manager QC",
-        "children": [
-          {
-            "title": "QC Inspector"
-          },
-          {
-            "title": "QC Inspector"
-          },
-          {
-            "title": "QC Inspector"
-          },
-          {
-            "title": "QC Inspector"
-          }
-        ]
+        "name": "Burhanuddin",
+        "title": "QA/QC Manager"
       },
       {
-        "name": "Ahmed Naseem",
-        "title": "QC Supervisor",
-        "children": [
-          {
-            "title": "QC Inspector"
-          },
-          {
-            "title": "QC Inspector"
-          },
-          {
-            "title": "QC Inspector"
-          },
-          {
-            "title": "QC Inspector"
-          }
-        ]
+        "name": "Abdullah Mannan",
+        "title": "Safety Supervisor"
+      },
+      {
+        "name": "Syed Irfan",
+        "title": "QA/QC Supervisor"
+      },
+      {
+        "name": "Inzmam Ahmad",
+        "title": "Safety Officer"
+      },
+      {
+        "name": "Haroon Mehmood",
+        "title": "Safety Officer"
+      },
+      {
+        "name": "Muhammad Asif Khan",
+        "title": "QA/QC Inspector"
+      },
+      {
+        "name": "Waleed Ahmad",
+        "title": "Business Development"
+      },
+      {
+        "name": "Mohamed Salah",
+        "title": "Operating Officer"
+      }
+    ]
+  },
+  "project": {
+    "name": "Abdul Rehman",
+    "title": "Project Manager",
+    "children": [
+      {
+        "name": "Aslam Khan",
+        "title": "Chief Surveyor"
+      },
+      {
+        "name": "Rafaqat Ali",
+        "title": "Construction Manager"
+      },
+      {
+        "name": "Shahrukh",
+        "title": "Civil Supervisor"
+      },
+      {
+        "name": "Mohammed Imran",
+        "title": "WPR"
+      },
+      {
+        "name": "Mohammad Zahid",
+        "title": "WPR"
+      },
+      {
+        "name": "Mohamed Abdal Monem",
+        "title": "Foreman"
+      },
+      {
+        "name": "Ahmed Moradha",
+        "title": "Foreman"
+      },
+      {
+        "name": "Ahmed Naser Saleh",
+        "title": "Foreman"
       }
     ]
   }
