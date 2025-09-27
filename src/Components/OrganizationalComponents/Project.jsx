@@ -2,7 +2,7 @@ import React from "react";
 import { Tree } from "react-organizational-chart";
 import { cn } from "../../lib/utils";
 
-export default function HeadManagement({
+export default function Project({
   headerTitle,
   isMobile,
   renderNode,
@@ -10,9 +10,9 @@ export default function HeadManagement({
 }) {
   return (
     <>
-      <section className={"headerTitle"}>
-        {/* <h2 className="title ">
-          Head Management{" "}
+      <section className={headerTitle}>
+        {/* <h2 className="title">
+          Project{" "}
         </h2> */}
         <div className="w-full overflow-x-auto md:flex md:justify-center py-6">
           <div
@@ -25,10 +25,14 @@ export default function HeadManagement({
               lineColor="#292C62"
               lineBorderRadius={"10px"}
               label={
-                <div className={cn("manager")}>
-                  {"Mutaeb Al Hajri"}
+                <div
+                  className={cn(
+                    "manager"
+                  )}
+                >
+                  {chartData[headerTitle].name}
                   <div className="text-xs font-medium text-white/80">
-                    {"chairman"}
+                    {chartData[headerTitle].title}
                   </div>
                 </div>
               }
