@@ -5,8 +5,9 @@ import { cn } from "../../lib/utils";
 
 import mainImg from "/AboutPages/organizational-chart/bgImg.webp";
 import HeadManagement from "../../Components/OrganizationalComponents/HeadManagement";
-import HsE from "./../../Components/OrganizationalComponents/HsE";
-import QualityControl from "../../Components/OrganizationalComponents/QualityControl";
+import Finance from "../../Components/OrganizationalComponents/Finance";
+import Safety from "../../Components/OrganizationalComponents/Safety";
+import Project from "../../Components/OrganizationalComponents/Project";
 
 export default function OrganizationalChart() {
   // useEffect(() => {
@@ -14,9 +15,9 @@ export default function OrganizationalChart() {
   // }, []);
   const [isMobile, setIsMobile] = useState(false);
 
-  const [headManagement, HSE, qualityControl] = Object.entries(chartData).map(
-    ([key]) => key
-  );
+  const [headManagement, finance, safety, project] = Object.entries(
+    chartData
+  ).map(([key]) => key);
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,14 +34,14 @@ export default function OrganizationalChart() {
       label={
         <div
           className={cn(
-            "text-white bg-primary  border-white text-center",
+            " bg-transparent border-2 border-secColor text-center",
             "rounded-lg px-2 py-1 md:px-4 md:py-2",
-            "text-[11px] md:text-sm shadow-sm transition-transform duration-300",
+            "text-[11px] md:text-sm shadow-sm transition-all duration-300 hover:shadow-secColor",
             "hover:scale-105 hover:shadow-xl hover:ring-2 hover:ring-white/70"
           )}
         >
-          {node.name}
-          <div className="text-[9px] md:text-xs text-white/80">
+          <h3 className={cn("text-secColor font-bold")}>{node.name}</h3>
+          <div className="text-[9px] md:text-xs text-primary font-bold">
             {node.title}
           </div>
         </div>
@@ -52,23 +53,25 @@ export default function OrganizationalChart() {
   );
 
   return (
-    <section className="bg-primary/20 py-20">
+    <section className="organizational-chart pb-0">
       {/* Header */}
       <div
-        className="relative px-6 md:px-16 py-10 mb-20 flex flex-col-reverse md:flex-row items-center gap-10 bg-cover h-[300px] md:h-[450px] lg:h-[500px] md:bg-fixed bg-center shadow-xl overflow-hidden"
+        className={cn(
+          "relative px-6 md:px-16 py-10 mb-20 flex flex-col-reverse md:flex-row items-center gap-10 bg-cover h-[300px] md:h-[450px] lg:h-[500px] md:bg-fixed bg-center shadow-xl overflow-hidden"
+        )}
         style={{ backgroundImage: `url(${mainImg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-hover/30 to-primary/80 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/90 to-secColor/40 z-10" />
         <div className="md:w-1/2 space-y-4 z-20 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-bg tracking-tight leading-tight drop-shadow-lg">
+          <h1 className="text-secColor text-4xl md:text-5xl lg:text-6xl font-extrabold text-bg tracking-tight leading-tight drop-shadow-xl">
             Organizational Chart
           </h1>
-          <p className="text-white text-xl md:text-2xl max-w-md font-semibold">
+          <p className="text-white text-lg md:text-2xl max-w-2xl font-bold">
             Explore our structure and meet the amazing team leading our company.
           </p>
         </div>
       </div>
-
+      {/* 
       <div className="px-6 md:px-16 py-10 max-w-6xl mx-auto text-center md:text-left my-5">
         <p className="text-primary font-medium text-lg leading-relaxed">
           <span className="block my-2 overflow-auto">
@@ -81,7 +84,7 @@ export default function OrganizationalChart() {
             customized solutions that meet your specific requirements.
           </span>
         </p>
-      </div>
+      </div> */}
 
       {/* Hint for mobile users */}
       {isMobile && (
@@ -98,14 +101,20 @@ export default function OrganizationalChart() {
           renderNode={renderNode}
           chartData={chartData}
         />
-        <HsE
-          headerTitle={HSE}
+        <Finance
+          headerTitle={finance}
           isMobile={isMobile}
           renderNode={renderNode}
           chartData={chartData}
         />
-        <QualityControl
-          headerTitle={qualityControl}
+        <Safety
+          headerTitle={safety}
+          isMobile={isMobile}
+          renderNode={renderNode}
+          chartData={chartData}
+        />
+        <Project
+          headerTitle={project}
           isMobile={isMobile}
           renderNode={renderNode}
           chartData={chartData}
