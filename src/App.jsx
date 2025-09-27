@@ -18,7 +18,7 @@ import LeadershipPage from "./Pages/AboutPages/LeadershipPage";
 import OurEquipments from "./Pages/AboutPages/OurEquipments";
 // import GSPIntroduction from "./Pages/AboutPages/GSPIntroduction/GSPIntroduction";
 import OurServicesPage from "./Pages/OurServicesPage/OurServicesPage";
-
+import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
 
 function App() {
   const routers = createBrowserRouter([
@@ -33,10 +33,7 @@ function App() {
           children: [
             { path: "our-equipments", element: <OurEquipments /> },
             { path: "leadership", element: <LeadershipPage /> },
-            {
-              path: "organizational-chart",
-              element: <OrganizationalChart />,
-            },
+            { path: "organizational-chart", element: <OrganizationalChart /> },
             // { path: "/about/introduction", element: <GSPIntroduction /> },
             // { path: "/about/information", element: <GSPInformation /> },
             // { path: "/about/our-man-power", element: <OurManPower /> },
@@ -44,6 +41,7 @@ function App() {
             // { path: "/about/financial-status", element: <FinancialStatus /> },
           ],
         },
+        { path: "projects", element: <ProjectsPage /> },
         { path: "ourServices", element: <OurServicesPage /> },
         // { path: "ourExperience", element: <OurExperiencePage /> },
         // {
