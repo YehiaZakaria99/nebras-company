@@ -18,13 +18,6 @@ const FlipBook = React.memo(({ bookRef, imgs }) => {
 
       setBookSize({ width, height });
     };
-
-    useEffect(() => {
-      if (bookRef.current) {
-        bookRef.current.pageFlip().update();
-      }
-    }, [bookSize]);
-
     window.addEventListener("resize", resizeBook);
     resizeBook();
     return () => window.removeEventListener("resize", resizeBook);
@@ -40,7 +33,7 @@ const FlipBook = React.memo(({ bookRef, imgs }) => {
         showCover={false}
         className="shadow-2xl rounded-xl mx-auto"
         useMouseEvents={true}
-        flippingTime={1000}
+        flippingTime={500}
       >
         {/* Cover Page */}
         <div
