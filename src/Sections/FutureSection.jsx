@@ -1,23 +1,7 @@
 import React, { useState } from "react";
 import { cn } from "../lib/utils";
-import ourVisionImg from "/FutureSection/our-vision.webp";
-import ourMissionImg from "/FutureSection/our-mission.webp";
 import FutureSectionCard from "../Components/FutureSectionCard/FutureSectionCard";
-
-const futureSectionCardData = {
-  vision: {
-    id: 1,
-    title: "Our-Vision",
-    imgSrc: ourVisionImg,
-    desc: `To lead with innovation and set new standards of excellence.`,
-  },
-  mission: {
-    id: 2,
-    title: "Our-Mission",
-    imgSrc: ourMissionImg,
-    desc: `To deliver reliable solutions that create lasting value.`,
-  },
-};
+import futureSectionCardData from "../Data/futureData";
 
 export default function FutureSection() {
   const [active, setActive] = useState("vision");
