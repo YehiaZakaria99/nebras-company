@@ -42,5 +42,4 @@ const projectsImages = [
   { src: img20, alt: "project20" },
 ];
 
-
-export default projectsImages
+export default projectsImages;
