@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import img1 from "/HomePage/HeroSection/1.webp";
 import img2 from "/HomePage/HeroSection/2.webp";
 import img3 from "/HomePage/HeroSection/3.webp";
 import { TypeAnimation } from "react-type-animation";
-import Slider from "react-slick";
+const Slider = lazy(() => import("react-slick"));
 import ScrollDown from "./../Components/Scroll/ScrollDown";
 import IntroOverlay from "./../Components/IntroOverlay/IntroOverlay";
 
@@ -43,42 +43,43 @@ export default function HeroSection() {
       className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-black/40 to-secColor/40"
     >
       <IntroOverlay />
+      <Suspense>
+        <Slider {...settings}>
+          {slides.map((src, index) => (
+            <div key={index}>
+              <div
+                className="relative h-screen bg-cover bg-center py-5"
+                style={{ backgroundImage: `url(${src})` }}
+              >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-secColor/40 z-10" />
 
-      <Slider {...settings}>
-        {slides.map((src, index) => (
-          <div key={index}>
-            <div
-              className="relative h-screen bg-cover bg-center py-5"
-              style={{ backgroundImage: `url(${src})` }}
-            >
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-secColor/40 z-10" />
+                {/* Content */}
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 ">
+                  <h1 className="text-white text-3xl md:text-5xl my-8 font-extrabold tracking-wide overflow-hidden min-h-[3rem] md:min-h-[4rem]">
+                    <TypeAnimation
+                      sequence={[
+                        1000,
+                        "Welcome to Nebras",
+                        1000,
+                        "Earth Cresset Contracting Company",
+                      ]}
+                      speed={75}
+                      cursor={false}
+                      repeat={Infinity}
+                      preRenderFirstString
+                    />
+                  </h1>
 
-              {/* Content */}
-              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 ">
-                <h1 className="text-white text-3xl md:text-5xl my-8 font-extrabold tracking-wide overflow-hidden min-h-[3rem] md:min-h-[4rem]">
-                  <TypeAnimation
-                    sequence={[
-                      1000,
-                      "Welcome to Nebras",
-                      1000,
-                      "Earth Cresset Contracting Company",
-                    ]}
-                    speed={75}
-                    cursor={false}
-                    repeat={Infinity}
-                    preRenderFirstString
-                  />
-                </h1>
-
-                <h2 className="text-white text-xl md:text-3xl font-bold overflow-hidden swap">
-                  Expertise in construction and pipeline solutions
-                </h2>
+                  <h2 className="text-white text-xl md:text-3xl font-bold overflow-hidden swap">
+                    Expertise in construction and pipeline solutions
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </Suspense>
       <ScrollDown to="contactUs" />
     </section>
   );

@@ -1,5 +1,6 @@
 import React, { memo, useLayoutEffect } from "react";
 import L from "leaflet";
+// const HTMLFlipBook = lazy(() => import("react-pageflip"));
 import "leaflet/dist/leaflet.css";
 
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";

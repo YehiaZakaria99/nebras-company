@@ -1,43 +1,41 @@
 import bgImg from "/OurServicesPage/bgImg.webp";
 
-import constructionImg from "/GalleryPage/33.webp";
-import pipelinesImg from "/GalleryPage/35.webp";
-import mechanicalImg from "/GalleryPage/31.webp";
-import electricalImg from "/GalleryPage/34.webp";
-import technicalImg from "/GalleryPage/32.webp";
+import constructionImg from "/HomePage/OurServicesSection/19.webp";
+import pipeLinesImg from "/HomePage/OurServicesSection/36.webp";
+import mechanicalImg from "/HomePage/OurServicesSection/31.webp";
 
 import { cn } from "../../lib/utils";
 import OurServicesPageCard from "../../Components/OurServicesPageCard/OurServicesPageCard";
 import { useEffect } from "react";
 
+const services = [
+  {
+    id: 0,
+    img: constructionImg,
+    title: "Construction",
+    description: `We have extensive experience in all aspects of construction, from civil and marine works to building and infrastructure development.`,
+  },
+  {
+    id: 1,
+    img: pipeLinesImg,
+    title: "Pipelines",
+    description: `We specialize in the design, construction, and maintenance of pipelines for oil, gas, and water transmission. 
+      Our capabilities include pipe construction, bending, automatic welding, procedure testing, permanent control of welding procedures,
+      lowering pipe strings with pipe fitters, and both manual & automatic joint welding methods.`,
+  },
+  {
+    id: 2,
+    img: mechanicalImg,
+    title: "Mechanical",
+    description: `We provide a full range of mechanical services, including equipment installation,
+      maintenance, and repair, with a specific focus on air conditioning and refrigeration systems.`,
+  },
+];
+
 export default function OurServicesPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const services = [
-    {
-      id: 0,
-      img: constructionImg,
-      title: "Construction",
-      description: `We have extensive experience in all aspects of construction, from civil and marine works to building and infrastructure development.`,
-    },
-    {
-      id: 1,
-      img: pipelinesImg,
-      title: "Pipelines",
-      description: `We specialize in the design, construction, and maintenance of pipelines for oil, gas, and water transmission. 
-      Our capabilities include pipe construction, bending, automatic welding, procedure testing, permanent control of welding procedures,
-      lowering pipe strings with pipe fitters, and both manual & automatic joint welding methods.`,
-    },
-    {
-      id: 2,
-      img: mechanicalImg,
-      title: "Mechanical",
-      description: `We provide a full range of mechanical services, including equipment installation,
-      maintenance, and repair, with a specific focus on air conditioning and refrigeration systems.`,
-    },
-  ];
 
   return (
     <section className="ourservices-page pb-0">
@@ -59,9 +57,7 @@ export default function OurServicesPage() {
           >
             Our Services
           </h1>
-          <p
-            className="text-white text-lg md:text-2xl max-w-md font-bold"
-          >
+          <p className="text-white text-lg md:text-2xl max-w-md font-bold">
             We offer a wide range of services, with our core business focused on
             earthwork activities.
           </p>

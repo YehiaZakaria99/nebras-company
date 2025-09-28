@@ -1,9 +1,9 @@
 import React, { memo } from "react";
 import { cn } from "../../lib/utils";
-import AnimatedOverlay from "../AnimatedOverlay/AnimatedOverlay";
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 
+// import AnimatedOverlay from "../AnimatedOverlay/AnimatedOverlay";
 const OurServicesSectionCard = React.memo(
   ({ service, idx, imgRef, btnRef }) => {
     return (

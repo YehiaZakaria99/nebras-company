@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { TreeNode } from "react-organizational-chart";
 import chartData from "../../Data/chartData.json";
 import { cn } from "../../lib/utils";
-
 import mainImg from "/AboutPages/organizational-chart/bgImg.webp";
 import HeadManagement from "../../Components/OrganizationalComponents/HeadManagement";
 import Finance from "../../Components/OrganizationalComponents/Finance";

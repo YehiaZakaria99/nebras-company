@@ -1,7 +1,6 @@
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import bgImg from "/GalleryPage/bgImg.webp";
-import { useContext, useEffect } from "react";
+import bgImg from "/ProjectsPage/bgImg.webp";
 import { cn } from "../../lib/utils";
 import ProjectsPageCard from "../../Components/ProjectsPageCard/ProjectsPageCard";
 import projectsImages from "../../Data/projectsImages";

@@ -1,5 +1,4 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { useEffect } from "react";
+import { Send } from "lucide-react";
 import bgImg from "/ContactPage/bgImg.webp";
 import { cn } from "../../lib/utils";
 import Map from "../../Components/Map/Map";

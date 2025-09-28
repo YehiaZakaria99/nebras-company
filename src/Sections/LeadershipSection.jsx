@@ -1,14 +1,13 @@
 import { cn } from "../lib/utils";
-import { NavLink } from "react-router";
 import chairmanImg from "/HomePage/LeadershipSection/chairman.webp";
 import bgImg from "/HomePage/LeadershipSection/bgImg.webp";
 import { ScrollTrigger } from "gsap/all";
-import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 import chairmanMessage from "../Data/chairmanMessage";
-import AnimatedOverlay from "../Components/AnimatedOverlay/AnimatedOverlay";
+// import { NavLink } from "react-router";
+// import AnimatedOverlay from "../Components/AnimatedOverlay/AnimatedOverlay";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 export default function LeadershipSection() {
   const imageRef = useRef(null);
@@ -19,85 +18,6 @@ export default function LeadershipSection() {
   const buttonRef = useRef(null);
   // const videoRef = useRef(null);
   const textSectionRef = useRef(null);
-
-  // New: Refs for list items and leader cards
-  const listRefs = useRef([]);
-  const leaderRefs = useRef([]);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // 🎯 Timeline 2: Text content
-      const tlText = gsap.timeline({
-        scrollTrigger: {
-          trigger: textSectionRef.current,
-          start: "top 95%",
-          toggleActions: "play none none none",
-        },
-      });
-
-      // 🪄 Heading from left
-      // tlText.from(headingRef.current, {
-      //   x: -50,
-      //   opacity: 0,
-      //   duration: 0.6,
-      //   ease: "power2.out",
-      // });
-
-      // 🪄 Quote from right
-      tlText.from(
-        quoteRef.current,
-        {
-          x: 50,
-          opacity: 0,
-          duration: 0.6,
-          ease: "power2.out",
-        },
-        "-=0.4"
-      );
-
-      // 🪄 List items from bottom
-      // tlText.from(
-      //   listRefs.current,
-      //   {
-      //     y: 30,
-      //     opacity: 0,
-      //     duration: 0.5,
-      //     ease: "power2.out",
-      //     stagger: 0.2,
-      //   },
-      //   "-=0.4"
-      // );
-
-      // 🪄 Button from bottom
-      // tlText.from(buttonRef.current, {
-      //   y: 30,
-      //   opacity: 0,
-      //   duration: 0.5,
-      //   ease: "power2.out",
-      // });
-
-      // 🪄 Leaders from opposite sides
-      // tlText.from(leaderRefs.current[0], {
-      //   x: -30,
-      //   opacity: 0,
-      //   duration: 0.5,
-      //   ease: "power2.out",
-      // });
-
-      // tlText.from(
-      //   leaderRefs.current[1],
-      //   {
-      //     x: 30,
-      //     opacity: 0,
-      //     duration: 0.5,
-      //     ease: "power2.out",
-      //   },
-      //   "-=0.3"
-      // );
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <section
