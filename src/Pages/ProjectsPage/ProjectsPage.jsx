@@ -3,8 +3,8 @@ import "react-photo-view/dist/react-photo-view.css";
 import bgImg from "/GalleryPage/bgImg.webp";
 import { useContext, useEffect } from "react";
 import { cn } from "../../lib/utils";
-import projectsImages from "../../Components/ProjectsImages/ProjectsImages";
 import ProjectsPageCard from "../../Components/ProjectsPageCard/ProjectsPageCard";
+import projectsImages from "../../Data/projectsImages";
 
 export default function ProjectsPage() {
   return (
