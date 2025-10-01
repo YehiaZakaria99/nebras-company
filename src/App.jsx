@@ -10,7 +10,7 @@ import LeadershipPage from "./Pages/AboutPages/LeadershipPage";
 import OurEquipments from "./Pages/AboutPages/OurEquipments";
 import OurServicesPage from "./Pages/OurServicesPage/OurServicesPage";
 import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
-// import OurExperiencePage from "./Pages/OurExperiencePages/OurExperiencePage";
+import OurExperiencePage from "./Pages/OurExperiencePage/OurExperiencePage";
 
 function App() {
   const routers = createBrowserRouter([
@@ -35,15 +35,7 @@ function App() {
         },
         { path: "projects", element: <ProjectsPage /> },
         { path: "ourServices", element: <OurServicesPage /> },
-        // { path: "ourExperience", element: <OurExperiencePage /> },
-        // {
-        //   path: "gallery",
-        //   element: (
-        //     <GalleryContextProvider>
-        //       <GalleryPage />
-        //     </GalleryContextProvider>
-        //   ),
-        // },
+        { path: "ourExperience", element: <OurExperiencePage /> },
         { path: "contact", element: <ContactPage /> },
         { path: "*", element: <NotFoundPage /> },
       ],
