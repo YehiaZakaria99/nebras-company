@@ -32,7 +32,7 @@ export default function Navbar() {
         { name: "Leadership", to: "/about/leadership" },
         { name: "Our Equipments", to: "/about/our-equipments" },
         { name: "Organizational Chart", to: "/about/organizational-chart" },
-        { name: "Our Experience", to: "ourExperience" },
+        { name: "Our Experience", to: "/about/our-experience" },
         // { name: "Introduction", to: "/about/introduction" },
         // { name: "Information", to: "/about/information" },
         // { name: "Our Man Power", to: "/about/our-man-power" },
@@ -41,7 +41,7 @@ export default function Navbar() {
       ],
     },
     { name: "Our Projects", to: "projects" },
-    { name: "Our Services", to: "ourServices" },
+    { name: "Our Services", to: "our-services" },
     // { name: "Gallery", to: "gallery" },
     { name: "Contact", to: "contact" },
   ];

@@ -47,7 +47,7 @@ const FlipBook = React.memo(({ bookRef, imgs }) => {
           >
             <div className="text-center space-y-2 px-4 h-full flex flex-col items-center justify-center">
               <h2 className="text-xl md:text-3xl font-bold text-secColor tracking-wide">
-                Our Certifications
+                Our Experience
               </h2>
               <p className="text-sm">
                 These certificates prove our commitment to safety, quality, and

@@ -55,7 +55,7 @@ const OurServicesSectionCard = React.memo(
             <div className="mt-12  overflow-hidden">
               <Link
                 ref={btnRef}
-                to="/ourServices"
+                to="/our-services"
                 className={cn(
                   "inline-flex items-center transform  gap-2  md:px-8 md:py-4 text-xs md:text-sm lg:text-lg px-4 py-2 rounded-md border bg-secColor text-white ",
                   " transition-all duration-300 font-bold group"
