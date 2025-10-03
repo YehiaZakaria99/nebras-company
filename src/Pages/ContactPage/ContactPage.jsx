@@ -43,7 +43,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-semibold mb-6 text-secColor">
             Send Us a Message
           </h2>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div className="grid md:grid-cols-2 gap-4">
               <input
                 type="text"
