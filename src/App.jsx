@@ -11,6 +11,7 @@ import OurEquipments from "./Pages/AboutPages/OurEquipments";
 import OurServicesPage from "./Pages/OurServicesPage/OurServicesPage";
 import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
 import OurExperiencePage from "./Pages/OurExperiencePage/OurExperiencePage";
+import OurClientsPage from "./Pages/OurClientsPage/OurClientsPage";
 
 function App() {
   const routers = createBrowserRouter([
@@ -27,6 +28,7 @@ function App() {
             { path: "leadership", element: <LeadershipPage /> },
             { path: "organizational-chart", element: <OrganizationalChart /> },
             { path: "our-experience", element: <OurExperiencePage /> },
+            { path: "our-clients", element: <OurClientsPage /> },
             // { path: "/about/introduction", element: <GSPIntroduction /> },
             // { path: "/about/information", element: <GSPInformation /> },
             // { path: "/about/our-man-power", element: <OurManPower /> },

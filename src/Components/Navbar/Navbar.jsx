@@ -33,6 +33,7 @@ export default function Navbar() {
         { name: "Our Equipments", to: "/about/our-equipments" },
         { name: "Organizational Chart", to: "/about/organizational-chart" },
         { name: "Our Experience", to: "/about/our-experience" },
+        { name: "Our Clients", to: "/about/our-clients" },
         // { name: "Introduction", to: "/about/introduction" },
         // { name: "Information", to: "/about/information" },
         // { name: "Our Man Power", to: "/about/our-man-power" },
