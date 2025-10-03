@@ -1,28 +1,52 @@
-import logo_01 from "/ClientsPage/Alhua.png";
-import logo_02 from "/ClientsPage/AlUla.jpg";
-import logo_03 from "/ClientsPage/Arbian Drilling.png";
-import logo_04 from "/ClientsPage/Cisco-logo.png";
+import logo_01 from "/ClientsPage/Alhua.webp";
+import logo_02 from "/ClientsPage/AlUla.webp";
+import logo_03 from "/ClientsPage/Arbian Drilling.webp";
+import logo_04 from "/ClientsPage/Cisco-logo.webp";
 import logo_05 from "/ClientsPage/CommScope.webp";
-import logo_06 from "/ClientsPage/Consolidated_Contractors_Company_Logo.png";
-import logo_07 from "/ClientsPage/Dell_Logo.png";
-import logo_08 from "/ClientsPage/honeywell.png";
-import logo_09 from "/ClientsPage/Hyundai_Engineering_&_Construction_logo.png";
-import logo_10 from "/ClientsPage/KPIL.NS_BIG.png";
-import logo_11 from "/ClientsPage/Larsen__Toubro_Logo.png";
-import logo_12 from "/ClientsPage/logo-sabic.png";
-import logo_13 from "/ClientsPage/Neom-Logo.png";
-import logo_14 from "/ClientsPage/Nesma_Partners_Logo_RGB.png";
-import logo_15 from "/ClientsPage/NESR_BIG.png";
-import logo_16 from "/ClientsPage/Petrojet_logo.png";
-import logo_17 from "/ClientsPage/RedSea.jpg";
-import logo_18 from "/ClientsPage/Royal_Saudi_Air_Force_embelm.png";
-import logo_19 from "/ClientsPage/saipem-vector-logo.png";
-import logo_20 from "/ClientsPage/Saudi-Aramco-Logo.png";
-import logo_21 from "/ClientsPage/Saudi-Oger-Ltd-Logo-Vector.svg-.png";
-import logo_22 from "/ClientsPage/sisco_logo_1-200x122.png";
-import logo_23 from "/ClientsPage/SK_logo.svg.png";
-import logo_24 from "/ClientsPage/Yclogo.png";
-import logo_25 from "/ClientsPage/zamil.png";
+import logo_06 from "/ClientsPage/Consolidated_Contractors_Company_Logo.webp";
+import logo_07 from "/ClientsPage/Dell_Logo.webp";
+import logo_08 from "/ClientsPage/honeywell.webp";
+import logo_09 from "/ClientsPage/Hyundai_Engineering_&_Construction_logo.webp";
+import logo_10 from "/ClientsPage/KPIL.NS_BIG.webp";
+import logo_11 from "/ClientsPage/Larsen__Toubro_Logo.webp";
+import logo_12 from "/ClientsPage/logo-sabic.webp";
+import logo_13 from "/ClientsPage/Neom-Logo.webp";
+import logo_14 from "/ClientsPage/Nesma_Partners_Logo_RGB.webp";
+import logo_15 from "/ClientsPage/NESR_BIG.webp";
+import logo_16 from "/ClientsPage/Petrojet_logo.webp";
+import logo_17 from "/ClientsPage/RedSea.webp";
+import logo_18 from "/ClientsPage/Royal_Saudi_Air_Force_embelm.webp";
+import logo_19 from "/ClientsPage/saipem-vector-logo.webp";
+import logo_20 from "/ClientsPage/Saudi-Aramco-Logo.webp";
+import logo_21 from "/ClientsPage/Saudi-Oger-Ltd-Logo-Vector.webp";
+import logo_22 from "/ClientsPage/sisco_logo.webp";
+import logo_23 from "/ClientsPage/SK_logo.webp";
+import logo_24 from "/ClientsPage/Yclogo.webp";
+
+import logo_25 from "/ClientsPage/zamil.webp";
+import logo_26 from "../../public/ClientsPage/ZKTECO-LOGO.webp";
+import logo_27 from "../../public/ClientsPage/Alcatel.webp";
+import logo_28 from "../../public/ClientsPage/Avaya_Logo.webp";
+import logo_29 from "../../public/ClientsPage/Bosch_logo.webp";
+import logo_30 from "../../public/ClientsPage/Mitel-Logo.webp";
+import logo_31 from "../../public/ClientsPage/cooper-logo.webp";
+import logo_32 from "../../public/ClientsPage/datwyler-logo.webp";
+import logo_33 from "../../public/ClientsPage/Eaton_Corporation_logo.webp";
+import logo_34 from "../../public/ClientsPage/ESTAP-logo.webp";
+import logo_35 from "../../public/ClientsPage/Flowserve.webp";
+import logo_36 from "../../public/ClientsPage/Fortinet_Logo.webp";
+import logo_37 from "../../public/ClientsPage/hpe_aruba.webp";
+import logo_38 from "../../public/ClientsPage/Leviton-Electrical-Solutions-Logo.webp";
+import logo_39 from "../../public/ClientsPage/Logo_Legrand.webp";
+import logo_40 from "../../public/ClientsPage/panduit-logo.webp";
+import logo_41 from "../../public/ClientsPage/rbh.webp";
+import logo_42 from "../../public/ClientsPage/Reichle-de-massari.webp";
+import logo_43 from "../../public/ClientsPage/Royal-commision.webp";
+import logo_44 from "../../public/ClientsPage/samsung.webp";
+import logo_45 from "../../public/ClientsPage/Schneider-Electric-logo.webp";
+import logo_46 from "../../public/ClientsPage/Siemens_logo.webp";
+import logo_47 from "../../public/ClientsPage/TRIAX-LOGO.webp";
+import logo_48 from "../../public/ClientsPage/WISI_Logo.webp";
 
 export const clients = [
   {
@@ -145,9 +169,129 @@ export const clients = [
     imgSrc: logo_24,
     alt: `client-${logo_24}`,
   },
+
   {
     id: `client-${logo_25}`,
     imgSrc: logo_25,
     alt: `client-${logo_25}`,
   },
+  {
+    id: `client-${logo_26}`,
+    imgSrc: logo_26,
+    alt: `client-${logo_26}`,
+  },
+  {
+    id: `client-${logo_27}`,
+    imgSrc: logo_27,
+    alt: `client-${logo_27}`,
+  },
+  {
+    id: `client-${logo_28}`,
+    imgSrc: logo_28,
+    alt: `client-${logo_28}`,
+  },
+  {
+    id: `client-${logo_29}`,
+    imgSrc: logo_29,
+    alt: `client-${logo_29}`,
+  },
+  {
+    id: `client-${logo_30}`,
+    imgSrc: logo_30,
+    alt: `client-${logo_30}`,
+  },
+  {
+    id: `client-${logo_31}`,
+    imgSrc: logo_31,
+    alt: `client-${logo_31}`,
+  },
+  {
+    id: `client-${logo_32}`,
+    imgSrc: logo_32,
+    alt: `client-${logo_32}`,
+  },
+  {
+    id: `client-${logo_33}`,
+    imgSrc: logo_33,
+    alt: `client-${logo_33}`,
+  },
+  {
+    id: `client-${logo_34}`,
+    imgSrc: logo_34,
+    alt: `client-${logo_34}`,
+  },
+  {
+    id: `client-${logo_35}`,
+    imgSrc: logo_35,
+    alt: `client-${logo_35}`,
+  },
+  {
+    id: `client-${logo_36}`,
+    imgSrc: logo_36,
+    alt: `client-${logo_36}`,
+  },
+  {
+    id: `client-${logo_37}`,
+    imgSrc: logo_37,
+    alt: `client-${logo_37}`,
+  },
+  {
+    id: `client-${logo_38}`,
+    imgSrc: logo_38,
+    alt: `client-${logo_38}`,
+  },
+  {
+    id: `client-${logo_39}`,
+    imgSrc: logo_39,
+    alt: `client-${logo_39}`,
+  },
+  {
+    id: `client-${logo_40}`,
+    imgSrc: logo_40,
+    alt: `client-${logo_40}`,
+  },
+
+  {
+    id: `client-${logo_41}`,
+    imgSrc: logo_41,
+    alt: `client-${logo_41}`,
+  },
+
+  {
+    id: `client-${logo_42}`,
+    imgSrc: logo_42,
+    alt: `client-${logo_42}`,
+  },
+  {
+    id: `client-${logo_43}`,
+    imgSrc: logo_43,
+    alt: `client-${logo_43}`,
+  },
+  {
+    id: `client-${logo_44}`,
+    imgSrc: logo_44,
+    alt: `client-${logo_44}`,
+  },
+  {
+    id: `client-${logo_45}`,
+    imgSrc: logo_45,
+    alt: `client-${logo_45}`,
+  },
+  {
+    id: `client-${logo_46}`,
+    imgSrc: logo_46,
+    alt: `client-${logo_46}`,
+  },
+  {
+    id: `client-${logo_47}`,
+    imgSrc: logo_47,
+    alt: `client-${logo_47}`,
+  },
+  {
+    id: `client-${logo_48}`,
+    imgSrc: logo_48,
+    alt: `client-${logo_48}`,
+  },
 ];
+
+

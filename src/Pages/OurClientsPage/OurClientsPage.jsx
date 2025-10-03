@@ -35,6 +35,8 @@ function OurClientsPage() {
     rtl: true,
   };
 
+  
+
   return (
     <>
       <section className="relative our-clients">
