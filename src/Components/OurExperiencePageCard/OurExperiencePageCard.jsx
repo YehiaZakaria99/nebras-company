@@ -1,11 +1,11 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { cn } from "../../lib/utils";
 
-const OurExperiencePageCard = ({ data: { title, description }, imgSrc }) => {
+const OurExperiencePageCard = ({ data: { title, description, img } }) => {
   const cardRef = useRef();
   useEffect(() => {
-    if(cardRef.current){
-        cardRef.current.scrollTo(0, 0);
+    if (cardRef.current) {
+      cardRef.current.scrollTo(0, 0);
     }
   }, []);
 
@@ -39,7 +39,7 @@ const OurExperiencePageCard = ({ data: { title, description }, imgSrc }) => {
         {/* Image Section */}
         <div className="relative w-full md:w-[50%] h-full rounded-lg bg-white flex items-center justify-center p-4">
           <img
-            src={imgSrc}
+            src={img}
             alt={title}
             loading="lazy"
             className="object-cover sm:object-contain h-full w-full transition-transform duration-500 ease-in-out will-change-transform"
