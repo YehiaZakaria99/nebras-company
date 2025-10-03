@@ -4,10 +4,12 @@ import { cn } from "../../lib/utils";
 import Map from "../../Components/Map/Map";
 import contactDetails from "../../Data/contactDetails.json";
 import ContactCard from "../../Components/ContactCard/ContactCard";
+import IntroOverlay from "../../Components/IntroOverlay/IntroOverlay";
 
 export default function ContactPage() {
   return (
     <section className="">
+      <IntroOverlay />
       {/* Header */}
       <div
         className="relative px-6 md:px-16 py-10 flex flex-col-reverse md:flex-row items-center gap-10 bg-cover h-[300px] md:h-[450px] lg:h-[500px] md:bg-fixed bg-bottom shadow-xl overflow-hidden"

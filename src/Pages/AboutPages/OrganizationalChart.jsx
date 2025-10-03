@@ -7,16 +7,14 @@ import HeadManagement from "../../Components/OrganizationalComponents/HeadManage
 import Finance from "../../Components/OrganizationalComponents/Finance";
 import Safety from "../../Components/OrganizationalComponents/Safety";
 import Project from "../../Components/OrganizationalComponents/Project";
+import IntroOverlay from "./../../Components/IntroOverlay/IntroOverlay";
+
+const [headManagement, finance, safety, project] = Object.entries(
+  chartData
+).map(([key]) => key);
 
 export default function OrganizationalChart() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
   const [isMobile, setIsMobile] = useState(false);
-
-  const [headManagement, finance, safety, project] = Object.entries(
-    chartData
-  ).map(([key]) => key);
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,6 +51,7 @@ export default function OrganizationalChart() {
 
   return (
     <section className="organizational-chart pb-0">
+      <IntroOverlay />
       {/* Header */}
       <div
         className={cn(

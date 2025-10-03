@@ -3,6 +3,7 @@ import bgImg from "/AboutPages/LeadershipPage/img.webp";
 import chairmanMessage from "../../Data/chairmanMessage";
 import chairmanImg from "/HomePage/LeadershipSection/chairman.webp";
 import { useEffect } from "react";
+import IntroOverlay from "../../Components/IntroOverlay/IntroOverlay";
 
 export default function LeadershipPage() {
   // useEffect(() => {
@@ -11,6 +12,7 @@ export default function LeadershipPage() {
   return (
     <>
       <section className="leadership-page pb-0 ">
+        <IntroOverlay />
         {/* Header Section */}
         <section
           className={cn(

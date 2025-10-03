@@ -7,6 +7,7 @@ import mechanicalImg from "/HomePage/OurServicesSection/31.webp";
 import { cn } from "../../lib/utils";
 import OurServicesPageCard from "../../Components/OurServicesPageCard/OurServicesPageCard";
 import { useEffect } from "react";
+import IntroOverlay from "../../Components/IntroOverlay/IntroOverlay";
 
 const services = [
   {
@@ -39,6 +40,8 @@ export default function OurServicesPage() {
 
   return (
     <section className="ourservices-page pb-0">
+      <IntroOverlay />
+
       {/* Header Section */}
       <section
         className={cn(

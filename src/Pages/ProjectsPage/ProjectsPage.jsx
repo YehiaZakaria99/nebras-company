@@ -4,10 +4,12 @@ import bgImg from "/ProjectsPage/bgImg.webp";
 import { cn } from "../../lib/utils";
 import ProjectsPageCard from "../../Components/ProjectsPageCard/ProjectsPageCard";
 import projectsImages from "../../Data/projectsImages";
+import IntroOverlay from './../../Components/IntroOverlay/IntroOverlay';
 
 export default function ProjectsPage() {
   return (
     <section className="organizational-chart pb-0">
+      <IntroOverlay />
       {/* Header */}
       <div
         className={cn(
