@@ -36,7 +36,7 @@ export default function OurExperienceSection() {
         {/* More Details */}
         <div className="text-center">
           <Link
-            to={"/our-experience"}
+            to={"/about/our-experience"}
             className={cn(
               "mt-6 inline-block text-md px-4 py-2 rounded-md",
               "text-secColor font-bold bg-white border-2 border-secColor",
