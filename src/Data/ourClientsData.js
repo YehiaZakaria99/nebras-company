@@ -24,29 +24,29 @@ import logo_23 from "/ClientsPage/SK_logo.webp";
 import logo_24 from "/ClientsPage/Yclogo.webp";
 
 import logo_25 from "/ClientsPage/zamil.webp";
-import logo_26 from "../../public/ClientsPage/ZKTECO-LOGO.webp";
-import logo_27 from "../../public/ClientsPage/Alcatel.webp";
-import logo_28 from "../../public/ClientsPage/Avaya_Logo.webp";
-import logo_29 from "../../public/ClientsPage/Bosch_logo.webp";
-import logo_30 from "../../public/ClientsPage/Mitel-Logo.webp";
-import logo_31 from "../../public/ClientsPage/cooper-logo.webp";
-import logo_32 from "../../public/ClientsPage/datwyler-logo.webp";
-import logo_33 from "../../public/ClientsPage/Eaton_Corporation_logo.webp";
-import logo_34 from "../../public/ClientsPage/ESTAP-logo.webp";
-import logo_35 from "../../public/ClientsPage/Flowserve.webp";
-import logo_36 from "../../public/ClientsPage/Fortinet_Logo.webp";
-import logo_37 from "../../public/ClientsPage/hpe_aruba.webp";
-import logo_38 from "../../public/ClientsPage/Leviton-Electrical-Solutions-Logo.webp";
-import logo_39 from "../../public/ClientsPage/Logo_Legrand.webp";
-import logo_40 from "../../public/ClientsPage/panduit-logo.webp";
-import logo_41 from "../../public/ClientsPage/rbh.webp";
-import logo_42 from "../../public/ClientsPage/Reichle-de-massari.webp";
-import logo_43 from "../../public/ClientsPage/Royal-commision.webp";
-import logo_44 from "../../public/ClientsPage/samsung.webp";
-import logo_45 from "../../public/ClientsPage/Schneider-Electric-logo.webp";
-import logo_46 from "../../public/ClientsPage/Siemens_logo.webp";
-import logo_47 from "../../public/ClientsPage/TRIAX-LOGO.webp";
-import logo_48 from "../../public/ClientsPage/WISI_Logo.webp";
+import logo_26 from "/ClientsPage/ZKTECO-LOGO.webp";
+import logo_27 from "/ClientsPage/Alcatel.webp";
+import logo_28 from "/ClientsPage/Avaya_Logo.webp";
+import logo_29 from "/ClientsPage/Bosch_logo.webp";
+import logo_30 from "/ClientsPage/Mitel-Logo.webp";
+import logo_31 from "/ClientsPage/cooper-logo.webp";
+import logo_32 from "/ClientsPage/datwyler-logo.webp";
+import logo_33 from "/ClientsPage/Eaton_Corporation_logo.webp";
+import logo_34 from "/ClientsPage/ESTAP-logo.webp";
+import logo_35 from "/ClientsPage/Flowserve.webp";
+import logo_36 from "/ClientsPage/Fortinet_Logo.webp";
+import logo_37 from "/ClientsPage/hpe_aruba.webp";
+import logo_38 from "/ClientsPage/Leviton-Electrical-Solutions-Logo.webp";
+import logo_39 from "/ClientsPage/Logo_Legrand.webp";
+import logo_40 from "/ClientsPage/panduit-logo.webp";
+import logo_41 from "/ClientsPage/rbh.webp";
+import logo_42 from "/ClientsPage/Reichle-de-massari.webp";
+import logo_43 from "/ClientsPage/Royal-commision.webp";
+import logo_44 from "/ClientsPage/samsung.webp";
+import logo_45 from "/ClientsPage/Schneider-Electric-logo.webp";
+import logo_46 from "/ClientsPage/Siemens_logo.webp";
+import logo_47 from "/ClientsPage/TRIAX-LOGO.webp";
+import logo_48 from "/ClientsPage/WISI_Logo.webp";
 
 export const clients = [
   {
@@ -293,5 +293,3 @@ export const clients = [
     alt: `client-${logo_48}`,
   },
 ];
-
-
