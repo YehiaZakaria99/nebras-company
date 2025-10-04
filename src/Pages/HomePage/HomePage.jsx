@@ -61,8 +61,6 @@ export default function HomePage() {
         <FutureSection />
         <OurExperienceSection />
         <ContactSection />
-
-        <Loading />
         {isScrolled && <ScrollUp to="heroSection" />}
       </div>
     </>
