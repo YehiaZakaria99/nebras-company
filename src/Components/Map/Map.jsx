@@ -49,7 +49,7 @@ const Map = () => {
   return (
     <div
       id="location"
-      className="rounded-3xl relative w-full overflow-hidden shadow-md shadow-secColor/30 border border-secColor/10 mb-16"
+      className="rounded-3xl relative w-full overflow-hidden shadow-md shadow-secColor border border-secColor/10 "
     >
       <div id="nebras-map" className="w-full h-[400px] rounded-3xl"></div>
     </div>
