@@ -7,18 +7,38 @@ import ContactSection from "../../Sections/ContactSection";
 import OurServicesSection from "../../Sections/OurServicessSection";
 import FutureSection from "../../Sections/FutureSection";
 import OurExperienceSection from "../../Sections/OurExperienceSection";
-// import AboutSection from "../../Sections/AboutSection";
-// import GallerySection from "./../../Sections/GallerySection";
-// import GalleryContextProvider from "../../Context/GalleryContext";
-// import IntroOverlay from "../../Components/IntroOverlay/IntroOverlay";
-// import Loading from "./../../Components/Loading/Loading";
+import Loading from "../../Components/Loading/Loading";
 
 export default function HomePage() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    let x = 1;
+    const interval = setInterval(() => {
+      if (x < 2) {
+        setIsLoading(true);
+        x = x + 1;
+      } else {
+        setIsLoading(false);
+      }
+    }, 100);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   function handleScroll() {
     if (window.scrollY >= 200) {
@@ -28,13 +48,9 @@ export default function HomePage() {
     }
   }
 
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <>
@@ -46,14 +62,7 @@ export default function HomePage() {
         <OurExperienceSection />
         <ContactSection />
 
-        {/* <AboutSection /> */}
-        {/* 
-
-        <GalleryContextProvider>
-          <GallerySection />
-        </GalleryContextProvider> */}
-
-        {/* <Loading /> */}
+        <Loading />
         {isScrolled && <ScrollUp to="heroSection" />}
       </div>
     </>

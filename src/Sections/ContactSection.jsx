@@ -28,7 +28,7 @@ export default function ContactSection() {
         <Map />
 
         {/* Contact Cards */}
-        <div className="grid gap-8 md:grid-cols-3 mb-16">
+        <div className="grid gap-8 md:grid-cols-3 my-16">
           {contactDetails.data.map(({ icon, title, details }, idx) => (
             <Fragment key={`${idx}${title}`}>
               <div className="transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg rounded-xl">
