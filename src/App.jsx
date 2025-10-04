@@ -1,17 +1,29 @@
 import "./App.css";
-import HomePage from "./Pages/HomePage/HomePage";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { lazy, Suspense } from "react";
+import HomePage from "./Pages/HomePage/HomePage";
 import Layout from "./Pages/LayoutPage/Layout";
 import AboutPage from "./Pages/AboutPages/AboutPage";
-import ContactPage from "./Pages/ContactPage/ContactPage";
-import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
-import OrganizationalChart from "./Pages/AboutPages/OrganizationalChart";
-import LeadershipPage from "./Pages/AboutPages/LeadershipPage";
-import OurEquipments from "./Pages/AboutPages/OurEquipments";
-import OurServicesPage from "./Pages/OurServicesPage/OurServicesPage";
-import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
-import OurExperiencePage from "./Pages/OurExperiencePage/OurExperiencePage";
-import OurClientsPage from "./Pages/OurClientsPage/OurClientsPage";
+import Loading from "./Components/Loading/Loading";
+
+const LeadershipPage = lazy(() => import("./Pages/AboutPages/LeadershipPage"));
+const OurEquipments = lazy(() => import("./Pages/AboutPages/OurEquipments"));
+const OrganizationalChart = lazy(() =>
+  import("./Pages/AboutPages/OrganizationalChart.jsx")
+);
+const OurExperiencePage = lazy(() =>
+  import("./Pages/OurExperiencePage/OurExperiencePage")
+);
+const OurClientsPage = lazy(() =>
+  import("./Pages/OurClientsPage/OurClientsPage")
+);
+const ProjectsPage = lazy(() => import("./Pages/ProjectsPage/ProjectsPage"));
+
+const OurServicesPage = lazy(() =>
+  import("./Pages/OurServicesPage/OurServicesPage")
+);
+const ContactPage = lazy(() => import("./Pages/ContactPage/ContactPage"));
+const NotFoundPage = lazy(() => import("./Pages/NotFoundPage/NotFoundPage"));
 
 function App() {
   const routers = createBrowserRouter([
@@ -24,22 +36,89 @@ function App() {
           path: "about",
           element: <AboutPage />,
           children: [
-            { path: "our-equipments", element: <OurEquipments /> },
-            { path: "leadership", element: <LeadershipPage /> },
-            { path: "organizational-chart", element: <OrganizationalChart /> },
-            { path: "our-experience", element: <OurExperiencePage /> },
-            { path: "our-clients", element: <OurClientsPage /> },
-            // { path: "/about/introduction", element: <GSPIntroduction /> },
-            // { path: "/about/information", element: <GSPInformation /> },
-            // { path: "/about/our-man-power", element: <OurManPower /> },
-            // { path: "/about/owned-machines", element: <OwnedMachines /> },
-            // { path: "/about/financial-status", element: <FinancialStatus /> },
+            {
+              path: "our-equipments",
+              element: (
+                <Suspense fallback={<Loading />}>
+                  {" "}
+                  <OurEquipments />{" "}
+                </Suspense>
+              ),
+            },
+            {
+              path: "leadership",
+              element: (
+                <Suspense fallback={<Loading />}>
+                  {" "}
+                  <LeadershipPage />{" "}
+                </Suspense>
+              ),
+            },
+            {
+              path: "organizational-chart",
+              element: (
+                <Suspense fallback={<Loading />}>
+                  {" "}
+                  <OrganizationalChart />{" "}
+                </Suspense>
+              ),
+            },
+            {
+              path: "our-experience",
+              element: (
+                <Suspense fallback={<Loading />}>
+                  {" "}
+                  <OurExperiencePage />{" "}
+                </Suspense>
+              ),
+            },
+            {
+              path: "our-clients",
+              element: (
+                <Suspense fallback={<Loading />}>
+                  {" "}
+                  <OurClientsPage />{" "}
+                </Suspense>
+              ),
+            },
           ],
         },
-        { path: "projects", element: <ProjectsPage /> },
-        { path: "our-services", element: <OurServicesPage /> },
-        { path: "contact", element: <ContactPage /> },
-        { path: "*", element: <NotFoundPage /> },
+        {
+          path: "projects",
+          element: (
+            <Suspense fallback={<Loading />}>
+              {" "}
+              <ProjectsPage />{" "}
+            </Suspense>
+          ),
+        },
+        {
+          path: "our-services",
+          element: (
+            <Suspense fallback={<Loading />}>
+              {" "}
+              <OurServicesPage />{" "}
+            </Suspense>
+          ),
+        },
+        {
+          path: "contact",
+          element: (
+            <Suspense fallback={<Loading />}>
+              {" "}
+              <ContactPage />{" "}
+            </Suspense>
+          ),
+        },
+        {
+          path: "*",
+          element: (
+            <Suspense fallback={<Loading />}>
+              {" "}
+              <NotFoundPage />{" "}
+            </Suspense>
+          ),
+        },
       ],
     },
   ]);
