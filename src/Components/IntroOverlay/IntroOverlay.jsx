@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import { cn } from "../../lib/utils";
 
 export default function IntroOverlay() {
   const overlayRef = useRef(null);
@@ -12,7 +13,7 @@ export default function IntroOverlay() {
 
     gsap.to(overlayRef.current, {
       x: "100%",
-      duration: 1.2,
+      duration: 1,
       ease: "power4.inOut",
       onComplete: () => {
         setVisible(false);
@@ -26,7 +27,10 @@ export default function IntroOverlay() {
     <div className="absolute inset-0 z-[99999999999]">
       <div
         ref={overlayRef}
-        className="absolute inset-0 bg-white"
+        className={cn(
+          " absolute inset-0 bg-white will-change-transform",
+          "flex justify-center items-center "
+        )}
         style={{ transform: "translateX(0%)" }}
       />
     </div>
