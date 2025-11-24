@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
 export default function NotFoundPage() {
-      useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
   return (
-    <div>
-      NotFound
+    <div className="bg-black text-orange-600 flex justify-center items-center h-screen">
+      <h1 className="text-6xl font-bold">Not Found</h1>
     </div>
-  )
+  );
 }
