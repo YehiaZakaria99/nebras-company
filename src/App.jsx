@@ -124,8 +124,8 @@ function App() {
   ]);
   return (
     <>
-      {/* <RouterProvider router={routers} /> */}
-      <NotFoundPage />
+      <RouterProvider router={routers} />
+      {/* <NotFoundPage /> */}
     </>
   );
 }
