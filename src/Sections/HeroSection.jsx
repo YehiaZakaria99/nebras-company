@@ -75,6 +75,8 @@ export default function HeroSection() {
                     Expertise in construction and pipeline solutions
                   </h2>
                 </div>
+
+                
               </div>
             </div>
           ))}
@@ -84,3 +86,8 @@ export default function HeroSection() {
     </section>
   );
 }
+
+
+
+// rgb(255,255,204) main
+// rgb(255,204,204) highlight
